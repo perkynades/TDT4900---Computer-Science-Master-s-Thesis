@@ -1,0 +1,30 @@
+\documentclass[american,titlepage,12pt]{ntnuthesis}
+\usepackage[utf8]{inputenc}
+
+\title{How is software in the Norwegian public sector quality controlled}
+\author{Emil Elton Nilsen}
+\date{December 2022}
+
+\addbibresource{thesis.bib}
+\input{glossary.tex}
+
+\begin{document}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\printglossary[type=\acronymtype] % Print acronyms
+\printglossary                    % Print glossary
+
+\input{chapters/01_introduction}
+\input{chapters/02_background}
+\input{chapters/03_method}
+\input{chapters/04_results}
+\input{chapters/05_discussion}
+\input{chapters/06_conclusion}
+
+\chapter*{\bibname}
+\printbibliography[heading=none]
+
+\end{document}
