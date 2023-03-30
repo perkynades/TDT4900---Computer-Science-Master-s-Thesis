@@ -63,7 +63,7 @@ Employees at IT-departments in different agencies of the Norwegian public sector
 \begin{tabular}{|l|l|l|}
 \hline
 \textbf{Participant ID} & \textbf{Organisation} & \textbf{Position} \\ \hline
-\#1 & NTNU & Professor \\ \hline
+\#1 & NTNU & Professor/Researcher \\ \hline
 \#2 & Sintef & Researcher \\ \hline
 \end{tabular}
 \caption{Experts on the Norwegian public sector participating as interview objects}
@@ -80,15 +80,11 @@ Employees at IT-departments in different agencies of the Norwegian public sector
 \#4 & NAV & Technology Principal \\ \hline
 \#5 & NAV & Head of an IT-area \\ \hline
 \#6 & NAV & Head of Architecture \\ \hline
-&  &  \\ \hline
-&  &  \\ \hline
-&  &  \\ \hline
-&  &  \\ \hline
-&  &  \\ \hline
-&  &  \\ \hline
-&  &  \\ \hline
-&  &  \\ \hline
-&  &  \\ \hline
+\#7 & Skatteetaten & Head of Project Managers \\ \hline
+\#8 & Skatteetaten & Head of an IT-area \\ \hline
+\#9 & Mattilsynet & Head of Platform \\ \hline
+\#10 & Mattilsynet & Project Leader/Architect \\ \hline
+\#11 & Mattilsynet & Head of Product Development \\ \hline
 \end{tabular}
 \caption{Employees from Norwegian public sector agencies participating as interview objects}
 \label{tab:agency_participants}
@@ -139,6 +135,9 @@ Transcription in Microsoft Teams is available in any ongoing meetings, and can b
 \paragraph{Transcription using Whisper}
 Whisper is an open source speech recognition software, built by OpenAI to increase the performance and accuracy in recognising speech \cite{oa_2022}. Whisper has three modes of accuracy in speech recognition: (I) small, (II) medium, and (III) large. With small being the most efficient, but least accurate, and large being the least efficient, but most accurate. This study used the large model, as this yielded the most accurate transcribing. Whisper takes an \textbf{.wav} file as input, and can output in multiple file formats, such as \textbf{.txt} and \textbf{.vtt}.
 
+\paragraph{Transcription using Autotekst}
+\textcolor{red}{Snakke om denne her, endre paragrafen under også}
+
 Both transcription in Microsoft Teams and Whisper do not provide a 100\% perfectly accurate transcription, but are accurate enough to understand what message and meaning is being communicated in the interview. This is considered accurate enough for this study, as it still enables the researcher to perform a thematic analysis on the transcribed interviews.
 
 \subsubsection{Thematic analysis}
@@ -158,20 +157,41 @@ There is an increased focus on knowledge sharing though the organisation & Cultu
 \label{tab:example_interview_categorization}
 \end{table}
 
-To categorise which themes are shared between interviews, a table of interconnected themes between interviews is created \cite{bjo_2022}. \autoref{tab:example_interconnected_themes} is an example of this. 
+To categorise which themes are shared between interviews, a table of interconnected themes between interviews participants is created \cite{bjo_2022}. \autoref{tab:interconnected_themes} is the following result of this. This table however is only an rough overview used to aid the researcher in presenting the results, some of the themes might be falsely identified, but it still of great help in presenting the results from the interviews.
 
-\textcolor{red}{Her må den faktiske tabellen bli satt inn}
-
-\begin{table}[h]
-\centering
-\begin{tabular}{|l|l|l|l|l|}
+\begin{table}[H]
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|}
 \hline
-\textbf{Interview date / Theme} & 1.1.22 & 2.1.22 & 4.1.22 & 6.1.22\\ \hline
-Technical testing & *      & *      &        & *      \\ \hline
-Culture           & *      &        & *      & *      \\ \hline
-\end{tabular}
-\caption{Example table of interconnected themes between interviews}
-\label{tab:example_interconnected_themes}
+\textbf{Participant ID / Theme} & \#1 & \#2 & \#3 & \#4 & \#5 & \#6 & \#7 & \#8 & \#9 & \#10 & \#11 \\ \hline
+Non-functional requirements     & X   & X   &     & X   & X   &     & X   & X   & X   &      & X    \\ \hline
+Agile                           & X   &     & X   &     &     &     &     & X   & X   &      &      \\ \hline
+Simulation                      & X   &     &     &     &     &     &     &     &     &      &      \\ \hline
+Security                        & X   &     &     &     &     &     & X   & X   & X   &      &      \\ \hline
+Inspection                      & X   &     &     &     &     &     &     &     &     & X    &      \\ \hline
+DevOps                          & X   &     & X   & X   & X   &     & X   &     &     & X    &      \\ \hline
+Architecture                    & X   &     &     &     &     &     & X   &     &     &      &      \\ \hline
+Team                            & X   & X   &     &     & X   & X   &     & X   & X   & X    & X    \\ \hline
+Testing                         & X   &     & X   & X   &     & X   & X   & X   &     & X    &      \\ \hline
+Technical debt                  & X   &     & X   & X   & X   &     &     & X   & X   & X    & X    \\ \hline
+Knowledge                       & X   &     &     & X   &     & X   & X   &     &     &      &      \\ \hline
+Method                          & X   & X   &     &     & X   &     & X   & X   & X   & X    &      \\ \hline
+Project                         & X   & X   & X   & X   & X   & X   & X   & X   & X   & X    & X    \\ \hline
+Resources                       & X   &     &     &     &     & X   & X   &     &     &      &      \\ \hline
+Feedback                        & X   & X   & X   &     &     &     &     &     &     &      &      \\ \hline
+Definition                      &     & X   &     &     &     & X   &     &     & X   & X    & X    \\ \hline
+User                            &     & X   &     &     &     &     &     &     &     &      &      \\ \hline
+Contextual                      &     & X   &     &     &     & X   &     &     &     &      &      \\ \hline
+Measurements                    &     &     &     &     & X   &     & X   &     &     &      &      \\ \hline
+Revision                        &     &     &     &     & X   &     &     &     &     &      & X    \\ \hline
+Legal                           &     & X   &     &     &     &     & X   &     &     & X    & X    \\ \hline
+Modelling                       &     &     &     &     &     &     &     &     &     & X    &      \\ \hline
+Languages                       &     &     &     &     &     &     &     &     &     & X    &      \\ \hline
+Domain                          &     &     &     &     &     &     &     &     &     & X    &      \\ \hline
+\end{tabular}%
+}
+\caption{Table of interconnected themes between interview participants}
+\label{tab:interconnected_themes}
 \end{table}
 
 \begin{comment}
