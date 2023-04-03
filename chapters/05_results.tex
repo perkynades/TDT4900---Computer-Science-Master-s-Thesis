@@ -5,9 +5,11 @@
 \textcolor{red}{Format: Dette er hva forsker sa. Dette er hva personene i etat 1 sa. Dette er hva personenen i etat 2 sa.}
 
 \textcolor{red}{
-Se på hva som må endres på i denne listen:
 \begin{itemize}
+    \item Er "definition" litt overflødig? Alle snakker jo om sin definisjon på ting over alt.
     \item Er det noe overlapp på "Non-functional requirements" og "definition"
+    \item Er det noe overlapp på "Agile" og "feedback"
+    \item Skal "simulation" settes under "testing"
 \end{itemize}
 }
 
@@ -31,19 +33,97 @@ Se på hva som må endres på i denne listen:
 \textit{Participant \#11} describing good usability as important in software quality, that the user should feel that a piece of software is of quality, the visual aspect is perceived as attractive. Also describing software quality is that piece of software is stable, secure and robust.
 
 \section{Agile}
-d
+\textit{Participant \#1} explaining that by using agile methods you demonstrate the software being developed, and at each demonstration feedback will be given about the software quality.
+
+\textit{Participant \#1} explaining that in agile methods it is primarily a customer which is receiving a product, and that it is primarily the product owner which follows the development team, and must be able to give feedback on the most important aspects in software quality, and if it is good enough.
+
+\textit{Participant \#1} explaining that in agile methods, it is meant to be used as a method to maintain high software quality throughout the lifetime of the software. That you should not compromise on quality to quickly finish a feature, instead compromising on the amount of user stories or features of the software.
+
+\textit{Participant \#1} explaining that in NAV's project to develop an new system for distributing parental benefits, most agile practices were followed in order to obtain good quality in the systems software.
+
+\textit{Participant \#3} describing that software quality does not have so much to do with ISO standards, but being able for a team to be able to change in their development of a system. Setting ability to change as similarities to quality in the software NAV creates. This because the development teams might not know what is correct or best when developing software in a world which is always changing. The development teams does not want any faults in their software, however since the world around the software is always changing, the teams have to guard against eventual faults and ensure that the consequences are as low as possible.
+
+\textit{Participant \#8} describing that software quality is described quite simply, how simple is it to modify the software. Also describing that in Skatteetaten agile methods to ensure quality, including delivering MVP's of the software and ensuring that their software delivers as expected.
+
+\textit{Participant \#9} explaining that an important measure to ensuring software quality is development speed. What is happening in the development of a piece of software and how is new releases published.
+
+\textit{Participant \#9} explaining that Mattilsynet could have better routines for assuring quality in its software. However Mattilsynet is a young organisation when it comes to software development and is currently most focused on development speed for its new product teams and focus on productivity and releasing solutions, instead of quality and testing. It will then become a challenge to change from this focus on development speed to quality, testing and managing its software.
+
 \section{Simulation}
-d
-\section{Simulation}
-d
+\textit{Participant \#1} describing that in the "Perform project" at the Norwegian Public Service Pension fund extra systems for testing their solution with simulated data. While at the development of the new system for distributing parental benefits at NAV, more traditional methods were used to test the system with simulated data.
+
+\section{Security}
+\textit{Participant \#1} explaining that at the development of the new system for distributing parental benefits at NAV, in the beginning specific persons had the responsibility for security. The project was done in 2019, and at that point each team had a specific person with knowledge in security. 
+
+\textit{Participant \#1} describing that at the "Perform project" at the Norwegian Public Service Pension fund had central in it project organisation requirements for security, which the development teams had to take into account.
+
+\textit{Participant \#7} explaining that Skatteetaten takes requirements related to security seriously. Skatteetaten is constantly exposed to cyber attacks, so their requirements on quality related to secure software has always been strict. Thus due to a lack of development resources, means that Skatteetaten has to prioritise security over functionalities for its users, meaning that they will have to make do with something a little simpler or which includes more manual work.
+
+\textit{Participant \#7} describing that the focus on security is the same at NAV, as at Skatteetaten.
+
+\textit{Participant \#8} explaining that at Skatteetaten, everything is logged. If someone looks up something, does a network call, we log that person doing it. Audit-logging is also done for direct lookups to a database, so that if you have the correct right's, then you will be logged and exposed.
+
+\textit{Participant \#9} explaining that at Mattilsynet a lot of ROS analasys is done to ensure quality in secruity, the ROS does also work as a more general ensuring of quality in the software being analysed.
+
 \section{Inspection}
-d
+\textit{Participant \#1} describing that at the "Perform project" at the Norwegian Public Service Pension fund, they used code inspection as a tool to ensure quality.
+
+\textit{Participant \#1} explaining that some are critical to some inspection techniques, due to it being time consuming. A developer has to stop what they are doing to look at a other developers code, review it, give their thoughts, send in a review, and repeat the process. After the code is approved, the developer then has to spend time on returning to what he/she was working on before, which leaves the whole process to take up to multiple days. If the developers instead had been pair-programming, the code would be inspected then and there.
+
+\textit{Participant \#1} explaining that a study from Microsoft found that there were only a few critical faults that were found in code inspections. Mostly faults relating to code style were found, not so much critical faults.
+
+\textit{Participant \#1} describing that it is their belief that many teams does code inspections, and in some organisations the code has to be inspected before it is allowed to be merged into the code repository.
+
+\textit{Participant \#10} explaining that they have increased the use of static code analysis at Mattilsynet. And had recently scanned a large old system by using SonarQube which he believes to have found about 145 critical faults. This enables Mattilsynet to know that these faults exists and that they can start fixing them, which is a huge step from not knowing that they exist. 
+
+\textit{Participant \#10} explaining that when it comes to inspection through monitoring and monitoring metrics, it is a bit weak at Mattilsynet, the participant further explaining that he is used to a higher standard at places such as Norsk Tipping.
+
 \section{DevOps}
-d
+\textit{Participant \#1} explaining that there has been done studies on the difference of demonstration of deployment of software. And the studies concluding with the customer and users finding more faults when the software is deployed, instead of in demonstrations. This because when the piece of software is being presented in an demonstration, the context is artificial. The user testing the software does not get to experience if it works in their own organisation or how it works with other tools used in their normal life. Hence a other kind of quality is tested when the software is deployed and available to the user in their normal context.
+
+\textit{Participant \#1} further explaining that NAV uses continuous deployment to gain feedback on its software. And in the project for parental benefits, the project was initially planned to be three large deployments, however for the last deployment the project switched tactics. For the last deployment, where teams were combined with both development and management resources, where continuously deployment was performed. And thinking that this gave the teams more control, due to the feedback from the users being more authentic on a wider range of quality aspects.
+
+\textit{Participant \#3} explaining that in the development of software, the negative consequences has to be as low as possible. This needs have to be handled with continuous delivery. In the past, NAV had 4 big releases every year, where the largest release had about 116 000 development hours. The only way to ensure that 116 000 development hours does not cause negative consequences is to do 
+ a lot of manual testing, a lot of check lists. However NAV believes that doing more frequent releases will decrease the consequences of an eventual fault. This is why NAV has gone from 4 releases a year to 1500 releases a week.
+
+\textit{Participant \#4} explaining that to ensure the development of robust software it needs to be continuously developed. If not maintained it will naturally decrease in quality. Also explaining that in order to create software of quality, speed and good flow is needed for the development teams. The teams at NAV follows the DevOps principles.
+
+\textit{Participant \#4} explaining that NAV has their own application platform, NAIS. NAIS is designed in a way which gives strong recommendations on how software should be developed and deployed to NAV's infrastructure. The sum of NAIS is that it makes it easier to create software at NAV, which increases quality. The teams at NAV are not forced to follow the recommendations of NAIS, however are encourage to make good decisions. These are important incentives for the teams to operate the software they develop, as this increases quality.
+
+\textit{Participant \#4} also explaining that to increase quality it is important to be able to fix faults quickly. Faults will always happen, so it is important to be able to fix these faults quickly.
+
+\textit{Participant \#5} explaining that NAV has a whole range of software, from COBOL software which is deployed to mainframes, to software deployed to the NAIS platform. NAV works the most with software that is deployed to the NAIS platform, where the platform itself maintains a higher level of quality by introducing standardised services and expectations on how software should be deployed.
+
+\textit{Participant \#7} explaining that at Skatteetaten, the teams themselves has the responsibility of delivering production ready software, where from 2013 they have worked with continuously deploying production ready software. And deploying code that is at user-story level, not at the delivery level. All of this to deliver production ready software as early as possible. If there are any faults, it is most likely of limited scope, and the team is able to quickly roll back to an earlier version of the software and can fix the fault quickly. This in contrast to large and infrequent releases, where large acceptance tests are needed, which gives large faults.
+
+\textit{Participant \#10} explaning that if not looking at its older software, Mattilsynets newer software is build using the micro-services or service-oriented architecture. The software is deployed to a Kubernetes cluster, which gives a declarative way of deploying software. Mattilsynet has a set of requirements for their software to be deployed to their cluster. The code has to be on GitHub and part of Mattilsynet's GitHub organisation, so that their platform team knows what it is, what it does and then can scan it for different reasons.
+
 \section{Architecture}
-d
+\textit{Participant \#1} explaining that in agile methods there should not be a head of architecture who controls everything. Rather the head of architect should have dialogue with each team and should with the teams agree on good architectural decisions. 
+
+\textit{Participant \#7} explaining that Skatteetaten as a different strategy and a higher architecture than NAV has. Skatteetaten has an increased focus on common components or the re-use of components. When having a high degree of reuse, it lets Skatteetaten get more quickly done with certain tasks.
+
 \section{Team}
-d
+\textit{Participant \#1} explaining that it is the environment who is creating the solution who should have opinions on what is good software quality in the context of the solution they are creating.
+
+\textit{Participant \#1} also explaining that in the larger project, there has been sub-projects which has focused on software quality. With people with knowledge in testing techniques and testing tools working both with the team and outside the team.
+
+\textit{Participant \#2} explaining that at Entur is based on that their development teams should be autonomous and decide what should be done at what point in a project. Assuming that this includes the assurance of software quality is part of the team, and the team can therefore decide what methods they should use to assure quality.
+
+\textit{Participant \#2} also explaining it is the teams themselves that have the responsibility on what methods should be used to assuring quality dependant on the context which they are in.
+
+\textit{Participant \#2} also explaining that assurance of quality might have been a more formal part of software development, when the software development process was more defined, like in the waterfall model. Now it has changed to development teams choose themselves what should be prioritised and what is important. Further suspecting that this change has led to software quality assurance being prioritised lower and is seen as less important. The development teams instead thinking that if the users are happy, then the software is of high quality.
+
+\textit{Participant \#2} also explaining that he does not know if any teams have a person which is responsible for quality assurance. However the teams has a for example a product owner or designers which have the user in mind, and that the user should feel that the software is usable and valuable. Further stating that it could be a challenge that the responsibility is not placed on a single person, however there is a responsibility throughout the team.
+
+\textit{Participant \#5} explaining that NAV has changed from centralised requirements and check-lists to where there is no centralised management. It is up to each team to understand how the software they develop function. Management trusts that the teams has the best knowledge of their product and can create good products.
+
+\textit{Participant \#6} explaining that if a piece of software is large enough to need more than one person, the need for software quality assurance increases. Thus the quality assurance needs to be adapted to the people who own the software and how the team developing it co-operate. 
+
+\textit{Participant \#6} also explaining that NAV is making efforts to make it easier for the development teams to change, test and own the software they are developing or maintaining.
+
+\textit{Participant \#8} explaining that at Skatteetaten the teams are cross-functional.
+
 \section{Testing}
 d
 \section{Knowledge}
