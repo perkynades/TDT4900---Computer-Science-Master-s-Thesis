@@ -10,6 +10,7 @@
     \item Er det noe overlapp på "Non-functional requirements" og "definition"
     \item Er det noe overlapp på "Agile" og "feedback"
     \item Skal "simulation" settes under "testing"
+    \item Se om det er overlapp mellom ting i "Method" og "Knowledge"
 \end{itemize}
 }
 
@@ -169,10 +170,44 @@ To help with this, Mattilsynet has a central team for security which works close
 
 \textit{Participant \#10} explaining that a Gartner-report on Mattilsynet's system "Mats" i 2012 explained that the system will cost Mattilsynet 10 Billion NOK over the next 15 years from 2012. That money does not exist, so Mattilsynet cannot let that happen. However the consequences of this is that the system looses its functionality as time goes on, just from the world around it changing. "Mats" has integration with other systems in the Norwegian public sector. A data format from the Norwegian Directorate of Agriculture changed led to "Mats" loosing functionality, due to Mattilsynet being unable to update "Mats" to accept the new data format.
 
+\textit{Participant \#11} explaining that Mattilsynet has older software which are good in quality when it comes to downtime and other operational requirements. However they are lacking in quality when it comes to technical debt and usability. The new applications of Mattilsynet has better usability and has overall better quality.
+
 \section{Knowledge}
-d
+\textit{Participant \#1} explaining that the Norwegian public sector participates in conferences to discuss competence development for their agencies. It is not only the larger agencies such as NAV and Skattetaten who attend such conferences, but other agencies in the Norwegian public sector.
+
+\textit{Participant \#4} explaining that the sharing of knowledge is important for assuring quality in software, as well as high competence throughout a organisation is important for software quality.  
+
+\textit{Participant \#6} explaining that competency can be a challenge. It is quite clear that the people with the least experience in software development has little knowledge in testing or continuous delivery, so these have to be trained in such things.
+
+\textit{Participant \#7} explaining that the people maintaining Skatteetatens older IT-system does not have the competency needed to develop and maintaining their newer software. These people usually work with stuff like Oracle databases do not know how to create a user-story or create a Java component. Skatteetaten need a different competency than that as there is a large change in their modernisation plans.
+
 \section{Method}
-d
+\textit{Participant \#1} explaining that there is little difference in the methods that the Norwegian public sector and the Norwegian private sector use in the development of their software.
+
+\textit{Participant \#1} also explaining that at the "Perform project" at the Norwegian pension fund, pair-programming was used as a software development method. However not all development teams in the Norwegian public sector perform pair-programming, but pair-programming is done for the more complex tasks. The development teams do make sure that all team members has pair-programmed in an development iteration. This has the effect of increasing ownership in the code the team is developing, which prevents future faults and the development team has a better understanding of how all the code function.
+
+\textit{Participant \#1} also explaining that at NAV software teaming or mob-programming is used, meaning that the whole development team sit together and write code. This enables more discussion about the code than by using pair-programming. This also has the effect of increasing knowledge in the whole development team.
+
+\textit{Participant \#2} explaining that software developers are using agile methods to ensure quality in their software by releasing it to the user, and seeing if the user gains any value from the software. These principles are used at NAV and Entur, which focuses MVP's and let the user test the MVP's. If the user do not care about a feature, NAV and Entur do not care either. By repeating this with their users, NAV and Entur ensure high quality in their software.
+
+\textit{Participant \#5} explaining that through NAV's technical direction, which describes what methods are desired in software development. This describes that pair-programming is preferred and it recommends that the development teams to it as often as possible. It also recommends focus on test-driven development and focus on test coverage in the development teams.
+
+\textit{Participant \#7} explaining that he thinks that the traditional ISO-mindset controls the quality of software after it has been created. For the last 15 years at Skattetaten the mindset has been that the control of software quality should be done from the start, instead of doing it after the fact.
+
+\textit{Participant \#7} also explaining that Skatteetaten has a method-framework which explains the best practice in software development and describes what working patterns should be followed. This is then added as part of the developments teams methods and is communicated to share experience on it. It is not seen as a method just for the methods sake, but is used as a way to share knowledge.
+
+\textit{Participant \#7} also explaining that part of Skatteetatens development patterns is doing things in the right order and having a good work flow, that competency is used in a good way. As a software developer there might be things to get stuck on, such as not understanding logic, organisation rules, architectural decisions. In these sceniarios good quality is being preventative in making the right decisions.
+
+\textit{Participant \#7} also explaining that to achieve good quality, cross-functional teams is needed. In software development there are a lot of aspects to think about, and it is not possible for a single person to handle all these aspects alone. Pair-programming is also recommended in assuring quality, instead of discovering faults and bad quality in tests.
+
+\textit{Participant \#8} explaining that Skatteetaten follows certain software development methods, such as KISS (Keep it simple stupid), Clean Code and Separation of Concern. These are all used to assure good software quality.
+
+\textit{Participant \#8} also explaining that there are several mechanisms at Skatteetaten to ensure good software quality. When developing a new function, at least 2 people have to look at the developed function, which introduces a QA-process. This and being through a test-phase is required for anything to be deployed to the production cluster. The developers never take any shortcuts. 
+
+\textcolor{red}{Skal disse være under "Software property" ellerno?}
+
+\textit{Participant \#9} explaining that easily accessible data is important for software to be of good quality. How data is store and retrieved in a system is important. If a systems quality should be assessed today it would be based on how its data interfaces with other applications. Today it is expected for an application to have accessible API so that its easy to get its data, and its not possible with everything that follows in good software quality such as the correct architecture and mindset on building a solution.
+
 \section{Project}
 d
 \section{Resources}
