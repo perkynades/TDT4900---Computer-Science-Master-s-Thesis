@@ -153,6 +153,21 @@ To help with this, Mattilsynet has a central team for security which works close
 \textit{Participant \#8} explaining that to be able to change a piece of software, the software needs to have a high test coverage. A method is tested on the lower level with unit-tests, then the whole unit or application which the method is a part of is tested. If using a microservice architecture where there is interaction and values between the application, then testing is needed at all levels. This to ensure that everything works as intended and changes in a piece of software does not lead to any faults which leads to the software crashing.
 
 \section{Technical Debt}
+\textit{Participant \#1} explaining that being able to register technical debt can be important for software quality as it enables knowledge in what should be done in the future and having knowledge on potential vulnerabilities in a system.
+
+\textit{Participant \#3} explaining that NAV has a large variety of software in their organisation. Some software is over 40 years old, while some is being created from the ground up now and all software in-between. And this variety in age of software means that NAV has to have different methods for how changes in its software is done, based on that piece of software. If the software is old, maybe 20 years old, manual testing is needed and a full test environment is needed, thus creating a lot of overhead which prohibits securing quality in the software. This leads to the need for modernisation of the old software, which for NAV means creating new software and turning off the old.
+
+\textit{Participant \#3} also explaining that NAV is trying to save old systems without turning them off, instead modernising them while still in service. The system for delivering pension benefits was created by consultants from 2007 to 2011, and which in 2017 was described as technical bankrupt. "It took half a year to change a comma". However by working at it and improving for five years and is now able to have changes to the system deployed daily. Creating software with the ability to change is important, it does not matter how much testing has been done upfront, the needs of the system will change from when it was ordered to when it goes live, and after it has gone live.
+
+\textit{Participant \#4} explaining that maintaining software is an issue. The development teams should use 20-25\% of their time on improve technical debt, as technical debt is the opposite of software quality. The challenge is to make the development teams spend so much time on technical debt.
+
+\textit{Participant \#5} explaining that NAV has a challenge with old systems without automated tests, requiring more manual quality assurance methods. These systems also have a lower rate of deploys, such as the system for delivering daily allowance benefits, called ARENA. It has gone from 4 deploys a year to 12 deploys. The frequency of deploys has increased some, but are still in-frequent due to the need for more manual quality checks.
+
+\textit{Participant \#8} explaining that Skatteetaen has some old software, and it is the re-writing and renewing of these systems that is a challenge in bad quality. The new systems that Skatteetaten is creating is of good quality, but the old has some quality issues. So the old software is being modernised bit by bit, and is turned of as they are being modernised.  
+
+\textit{Participant \#9} explaining that Mattilsynet has some older systems, however with the new product-teams organisation, it has given a better focus on this old software. The new systems are made with better quality, however there are still issues with quality in the older systems.
+
+\textit{Participant \#10} explaining that a Gartner-report on Mattilsynet's system "Mats" i 2012 explained that the system will cost Mattilsynet 10 Billion NOK over the next 15 years from 2012. That money does not exist, so Mattilsynet cannot let that happen. However the consequences of this is that the system looses its functionality as time goes on, just from the world around it changing. "Mats" has integration with other systems in the Norwegian public sector. A data format from the Norwegian Directorate of Agriculture changed led to "Mats" loosing functionality, due to Mattilsynet being unable to update "Mats" to accept the new data format.
 
 \section{Knowledge}
 d
