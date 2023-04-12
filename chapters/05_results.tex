@@ -1,6 +1,8 @@
 \chapter{Results}
 
-\section{Perspective of Software Quality}
+\section{Perspectives of Software Quality}
+
+\subsection{Definition}
 The results from the interviews in the case study show that the participants have different perspectives on software quality and software quality assurance.
 
 The word \textit{"quality"} is a word that is difficult to describe, as it is as word which people think they understand and know what is, however nobody quite know how to define it. People thing that something of high quality is something which will last long, something which will give value, something which is good. The words \textit{"software quality"} is something which is not often used in the Norwegian Public Sector.
@@ -14,6 +16,7 @@ The word \textit{"quality"} is a word that is difficult to describe, as it is as
 
 %\textit{Participant \#6} explaining that software quality is the ability for software to change over time. One of NAV's systems for disbursing social securities is about 40 years old and is nation-bearing for Norway. However it is very difficult to change, and has a limited amount of tests. Yet it has solved a problem for over 40 years, so its of good quality in that sense, but yet it so bad in other ways.
 
+\subsection{Context}
 What context the software is situated in, is important for how it's quality should be assured. If creating software for medical machines, which can endanger humans, no faults can be allowed. Hence methods needed to assure quality could be manual and time consuming testing with a high degree of coordination. For software with less consequences of faults, automatic testing as a software quality assurance method can be acceptable.
 
 The context deciding what software quality assurance methods should be used are also important for other situations. If a piece of software is only intended to run once, mutability is not important, the most important property being that it solves the particular problem. In this situation a heavy focus on software quality by the development team can lead to unwanted complexity in the software, which do not help the software in solving it's intended problem.
@@ -27,51 +30,79 @@ At NAV each piece of software decides how the development teams assures quality.
 
 %\textit{Participant \#6} also explaining that the systems such as the system disbursing social securities and sick pay at NAV do not use the same methods to assure software quality. Some have long manual test-processes, while others have automatic testing, and some are in-between with manual testing which are trying to move to automatic tests. Some system have changes which are deployed every third month, while other deploy changes 20 times a day. 
 
-\subsection{Non-functional requirements}
-\textit{Participant \#1} describing that software quality is related to non-functional requirements, such as usability, maintainability, performance, security, or the mutability of the software's architecture. 
+\subsection{Non-functional Requirements}
+Associations to non-functional requirements are described when it comes to the definition of software quality, that it relates to usability, maintainability, performance, security, or the mutability of the software's architecture. Associations to manageability of the software being created is important for the software quality. These non-functional requirements are also described as being the most important in the technical quality of a piece of software.
 
-\textit{Participant \#1} explained that a team of software consultant once was delivered a list of over 250 non-functional requirements which the intended system had to maintain. Such a long list of requirements being difficult to control that the requirements are actually followed, being even more difficult to actually implement the requirements.
+At NAV, non-functional requirements has been described as quality requirements or quality properties. In another part of the Norwegian public sector a team of software once was delivered a list of 250 such requirements or properties which the system had to maintain. Controlling that all 250 requirements are being followed to be difficult, and actually implementing all 250 requirements into the system being even more difficult.
 
-\textit{Participant \#2} describing software quality as a piece of software being made in such a way that it is robust. And that it is made so that it is easy for other programmers to modify, maintain and repair if it is needed.
+%\subsection{Non-functional requirements}
+%\textit{Participant \#1} describing that software quality is related to non-functional requirements, such as usability, maintainability, performance, security, or the mutability of the software's architecture. 
 
-\textit{Participant \#4} has similar reflections on non-functional requirements. However also focus on the manageability of the software being created, that it should be long lasting and be able to be modified over a longer span of time. Also describing that a piece of software is not dependant on 1 person, but the whole developing it. 
+%\textit{Participant \#1} explained that a team of software consultant once was delivered a list of over 250 non-functional requirements which the intended system had to maintain. Such a long list of requirements being difficult to control that the requirements are actually followed, being even more difficult to actually implement the requirements.
 
-\textit{Participant \#5} describing that NAV has called non-functional requirements as quality requirements or quality properties. Something which was done in the past. Also explaining quality as testable or maintainable.
+%\textit{Participant \#2} describing software quality as a piece of software being made in such a way that it is robust. And that it is made so that it is easy for other programmers to modify, maintain and repair if it is needed.
 
-\textit{Participant \#7} explaining that in the technical quality of software, some non-functional requirements are more important than others, such as manageability, functionality, usability, maintainability being more important to focus on than other non-functional requirements. 
+%\textit{Participant \#4} has similar reflections on non-functional requirements. However also focus on the manageability of the software being created, that it should be long lasting and be able to be modified over a longer span of time. Also describing that a piece of software is not dependant on 1 person, but the whole developing it. 
 
-\textit{Participant \#8} relating to the reflections of \textit{Participant \#2} in that a piece of software should be easy to modify, and that the software's code should be readable and quick to understand how it functions by just reading it.
+%\textit{Participant \#5} describing that NAV has called non-functional requirements as quality requirements or quality properties. Something which was done in the past. Also explaining quality as testable or maintainable.
 
-\textit{Participant \#9} explained that he had worked with software quality, but measuring it up against the ISO standards. Including measuring it up against non-functional requirements such as usability, security, re-usability etc. 
+%\textit{Participant \#7} explaining that in the technical quality of software, some non-functional requirements are more important than others, such as manageability, functionality, usability, maintainability being more important to focus on than other non-functional requirements. 
 
-\textit{Participant \#11} describing good usability as important in software quality, that the user should feel that a piece of software is of quality, the visual aspect is perceived as attractive. Also describing software quality is that piece of software is stable, secure and robust.
+%\textit{Participant \#8} relating to the reflections of \textit{Participant \#2} in that a piece of software should be easy to modify, and that the software's code should be readable and quick to understand how it functions by just reading it.
+
+%\textit{Participant \#9} explained that he had worked with software quality, but measuring it up against the ISO standards. Including measuring it up against non-functional requirements such as usability, security, re-usability etc. 
+
+%\textit{Participant \#11} describing good usability as important in software quality, that the user should feel that a piece of software is of quality, the visual aspect is perceived as attractive. Also describing software quality is that piece of software is stable, secure and robust.
 
 \section{Technical}
 \subsection{Security}
-\textit{Participant \#1} explaining that at the development of the new system for distributing parental benefits at NAV, in the beginning specific persons had the responsibility for security. The project was done in 2019, and at that point each team had a specific person with knowledge in security. 
+In the development process of NAV's new systems for distributing parental benefits, how security has been assured in the system has changed. Initially only specific persons had the responsibility for security, however when the project was complete in 2019, each team had a specific person with knowledge in security. Other projects such as "Perform Project" at the Norwegian Public Service Pension Fund had a more central control of security in its requirements, which the development teams had to take into account.
 
-\textit{Participant \#1} describing that at the "Perform project" at the Norwegian Public Service Pension fund had central in it project organisation requirements for security, which the development teams had to take into account.
+The requirements for security at Skatteetaten are and has always been strict, due to Skatteetaten's software  being constantly exposed to cyber attacks. This and a general lack of development resources has resulted in Skatteetaten prioritising security over other requirements and functionalities. Meaning that Skatteetaten's users might have to accept software which lacks in usability and functionality, due to Skatteetatens high requirements for security. This focus on strict security requirements are described as being the same for NAV, as it is for Skatteetaten.
 
-\textit{Participant \#7} explaining that Skatteetaten takes requirements related to security seriously. Skatteetaten is constantly exposed to cyber attacks, so their requirements on quality related to secure software has always been strict. Thus due to a lack of development resources, means that Skatteetaten has to prioritise security over functionalities for its users, meaning that they will have to make do with something a little simpler or which includes more manual work.
+One of the methods that Skatteetaten use to ensure security in their systems, is by all events in their systems being logged. Whenever a network-call is made, someone does a direct look-up in a database etc it is audit-logged. This so that if someone both with authorised and unauthorised permissions will be logged and exposed.
 
-\textit{Participant \#7} describing that the focus on security is the same at NAV, as at Skatteetaten.
+\textcolor{red}{Har "ROS-analysis" et mer engelsk navn}
 
-\textit{Participant \#8} explaining that at Skatteetaten, everything is logged. If someone looks up something, does a network call, we log that person doing it. Audit-logging is also done for direct lookups to a database, so that if you have the correct right's, then you will be logged and exposed.
+Analysis such ROS-analysis is done to ensure that quality requirements such as security is met at Mattilsynet. However ROS-analysis is also done to ensure that other quality requirements than just security is also met.
 
-\textit{Participant \#9} explaining that at Mattilsynet a lot of ROS analasys is done to ensure quality in secruity, the ROS does also work as a more general ensuring of quality in the software being analysed.
+%\subsection{Security}
+%\textit{Participant \#1} explaining that at the development of the new system for distributing parental benefits at NAV, in the beginning specific persons had the responsibility for security. The project was done in 2019, and at that point each team had a specific person with knowledge in security. 
+
+%\textit{Participant \#1} describing that at the "Perform project" at the Norwegian Public Service Pension fund had central in it project organisation requirements for security, which the development teams had to take into account.
+
+%\textit{Participant \#7} explaining that Skatteetaten takes requirements related to security seriously. Skatteetaten is constantly exposed to cyber attacks, so their requirements on quality related to secure software has always been strict. Thus due to a lack of development resources, means that Skatteetaten has to prioritise security over functionalities for its users, meaning that they will have to make do with something a little simpler or which includes more manual work.
+
+%\textit{Participant \#7} describing that the focus on security is the same at NAV, as at Skatteetaten.
+
+%\textit{Participant \#8} explaining that at Skatteetaten, everything is logged. If someone looks up something, does a network call, we log that person doing it. Audit-logging is also done for direct lookups to a database, so that if you have the correct right's, then you will be logged and exposed.
+
+%\textit{Participant \#9} explaining that at Mattilsynet a lot of ROS analasys is done to ensure quality in secruity, the ROS does also work as a more general ensuring of quality in the software being analysed.
 
 \subsection{Inspection}
-\textit{Participant \#1} describing that at the "Perform project" at the Norwegian Public Service Pension fund, they used code inspection as a tool to ensure quality.
+It is the belief that many development teams in the Norwegian public sector use code inspection as a tool to find faults in their software. As well as new code have to be inspected before it is allowed to be merge into the code repository. This was done at the "Perform project" at the Norwegian Public Service Pension fund.
 
-\textit{Participant \#1} explaining that some are critical to some inspection techniques, due to it being time consuming. A developer has to stop what they are doing to look at a other developers code, review it, give their thoughts, send in a review, and repeat the process. After the code is approved, the developer then has to spend time on returning to what he/she was working on before, which leaves the whole process to take up to multiple days. If the developers instead had been pair-programming, the code would be inspected then and there.
+When developing a new feature for software at Skatteetaten, at least 2 developers have to be included in a code review process for the developed feature before it is accepted in order to assure that the feature is of quality.
 
-\textit{Participant \#1} explaining that a study from Microsoft found that there were only a few critical faults that were found in code inspections. Mostly faults relating to code style were found, not so much critical faults.
+Some are hesitant to the use of code inspection tools to increase software quality, such as a developer code review, due to it being time consuming. When asked to perform a code review, a developer has to stop what they are doing, review the code, give their toughs, send the review and repeat the process until the code is of satisfactory quality. The developer then has to get back to the task he/she was doing before the review. This can lead to a code review taking multiple days. The developers could instead have performed pair-programming, and the code would be reviewed then and there. 
 
-\textit{Participant \#1} describing that it is their belief that many teams does code inspections, and in some organisations the code has to be inspected before it is allowed to be merged into the code repository.
+Recently the developers at Mattilsynet has increased their use of static code analysis tools such as SonarQube. A static code analysis of an large old system at Mattilsynet is said to find 145 critical faults. Which enables Mattilsynet to know that these faults exists and can stat processes to fix these faults. However this is in contrast with an alleged study from Microsoft, which is said to conclude that such code inspection tools only find a limited amount of critical faults. Mostly finding faults in code style and not much else.
 
-\textit{Participant \#10} explaining that they have increased the use of static code analysis at Mattilsynet. And had recently scanned a large old system by using SonarQube which he believes to have found about 145 critical faults. This enables Mattilsynet to know that these faults exists and that they can start fixing them, which is a huge step from not knowing that they exist. 
+It is also described that inspection through monitoring and monitoring metrics is a bit weak at Mattilsynet, that it might be to a better standard at other organisations such as Norsk Tipping.
 
-\textit{Participant \#10} explaining that when it comes to inspection through monitoring and monitoring metrics, it is a bit weak at Mattilsynet, the participant further explaining that he is used to a higher standard at places such as Norsk Tipping.
+%\textit{Participant \#1} describing that at the "Perform project" at the Norwegian Public Service Pension fund, they used code inspection as a tool to ensure quality.
+
+%\textit{Participant \#1} explaining that some are critical to some inspection techniques, due to it being time consuming. A developer has to stop what they are doing to look at a other developers code, review it, give their thoughts, send in a review, and repeat the process. After the code is approved, the developer then has to spend time on returning to what he/she was working on before, which leaves the whole process to take up to multiple days. If the developers instead had been pair-programming, the code would be inspected then and there.
+
+%When developing a new function, at least 2 people have to look at the developed function, which introduces a QA-process. 
+
+%\textit{Participant \#1} explaining that a study from Microsoft found that there were only a few critical faults that were found in code inspections. Mostly faults relating to code style were found, not so much critical faults.
+
+%\textit{Participant \#1} describing that it is their belief that many teams does code inspections, and in some organisations the code has to be inspected before it is allowed to be merged into the code repository.
+
+%\textit{Participant \#10} explaining that they have increased the use of static code analysis at Mattilsynet. And had recently scanned a large old system by using SonarQube which he believes to have found about 145 critical faults. This enables Mattilsynet to know that these faults exists and that they can start fixing them, which is a huge step from not knowing that they exist. 
+
+%\textit{Participant \#10} explaining that when it comes to inspection through monitoring and monitoring metrics, it is a bit weak at Mattilsynet, the participant further explaining that he is used to a higher standard at places such as Norsk Tipping.
 
 \subsection{Architecture}
 \textit{Participant \#1} explaining that in agile methods there should not be a head of architecture who controls everything. Rather the head of architect should have dialogue with each team and should with the teams agree on good architectural decisions. 
@@ -195,7 +226,7 @@ At NAV each piece of software decides how the development teams assures quality.
 
 \textit{Participant \#8} explaining that Skatteetaten follows certain software development methods, such as KISS (Keep it simple stupid), Clean Code and Separation of Concern. These are all used to assure good software quality.
 
-\textit{Participant \#8} also explaining that there are several mechanisms at Skatteetaten to ensure good software quality. When developing a new function, at least 2 people have to look at the developed function, which introduces a QA-process. This and being through a test-phase is required for anything to be deployed to the production cluster. The developers never take any shortcuts. 
+\textit{Participant \#8} also explaining that there are several mechanisms at Skatteetaten to ensure good software quality. Such as code being through a test-phase is required for anything to be deployed to the production cluster. The developers never take any shortcuts. 
 
 \textit{Participant \#10} explaining that at NRK there was still a lot projects, with the focus on external revisions or performing quality assurance of the projects. However this did little to actually assure quality in the project.
 
