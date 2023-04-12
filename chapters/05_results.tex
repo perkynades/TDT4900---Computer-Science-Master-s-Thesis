@@ -104,25 +104,30 @@ It is also described that inspection through monitoring and monitoring metrics i
 
 %\textit{Participant \#10} explaining that when it comes to inspection through monitoring and monitoring metrics, it is a bit weak at Mattilsynet, the participant further explaining that he is used to a higher standard at places such as Norsk Tipping.
 
-\subsection{Architecture}
-\textit{Participant \#1} explaining that in agile methods there should not be a head of architecture who controls everything. Rather the head of architect should have dialogue with each team and should with the teams agree on good architectural decisions. 
-
-\textit{Participant \#7} explaining that Skatteetaten as a different strategy and a higher architecture than NAV has. Skatteetaten has an increased focus on common components or the re-use of components. When having a high degree of reuse, it lets Skatteetaten get more quickly done with certain tasks.
-
 \subsection{Testing}
-\textit{Participant \#1} explaining that most agencies in the Norwegian public sector use regression testing to test their software, and are trying to automate as much as possible in testing. However some testing is still done manually, such as exploitative testing and having the customer involved in the testing activities.
+Allegedly most agencies in the Norwegian public sector use regression testing to ensure software quality in their software. As well as trying to automate as much of the testing as possible. However some of the testing activities are still done manually, such as exploitative testing and involving the customer in the testing activities. 
 
-\textit{Participant \#1} describing that in the "Perform project" at the Norwegian Public Service Pension fund extra systems for testing their solution with simulated data. While at the development of the new system for distributing parental benefits at NAV, more traditional methods were used to test the system with simulated data.
+At the "Perform project" at the Norwegian Public Service Pension fund supporting systems for testing their solution with simulated data were created. While at the development of the new system for distributing parental benefits at NAV, more traditional methods were used to test the system with simulated data.
 
-\textit{Participant \#3} explaining that continuous delivery is something which takes a lot of effort to get working properly, which includes writing tests. Tests are being written to make sure that there is a web of security around the software being created, so that the chance of something faulty being delivered is a low as possible. The chance of faults will never be 0, but trying to get it as low as possible within reason. 
+Writing tests is important when trying to include proper continuous delivery in a software development project. These tests are written to ensure that there is a web of security around the software being create, so that the chance of something faulty being delivered is as low as possible. The chance of faults will never be zero, but it its important to get it as low as possible withing reason. Writing these tests are also important for the ability to more securely delivering smaller and more frequent changes to the software being created.
 
-\textit{Participant \#4} explaining that in order to deploying smaller and more frequent changes to a piece of software, automated quality checks are needed.
+Skatteetaten have a high degree of automated tests, and there are years since they stopped performing acceptance tests. Skatteetaten has also had to experiment with writing the correct amount of automated tests. If there for instance are too many automatic tests, it becomes a large task to maintain all the tests. Therefore there has been a challenge for Skatteetaten to find the balancing point on what is the right amount of automated tests.
 
-\textit{Participant \#6} explaining that in order to create software that is able to change a lot has to be in place, such as testing. Testing being the most important measure to make sure that a piece of software can change over time.
+It is described that to be able to modify a piece of software, the software needs to have a high test coverage. A low-level method is first tested using unit-tests, then the whole software unit or application which the method is a part of is tested. If using a microservice architecture where there is interactions and values between the applications, then testing is needed at all levels. This to ensure to ensure that all works as intended and modifications in a piece of software do not lead to any faults. High test coverage is also described as the most important measure to ensure that a piece of software can be modified over a longer period of time.
 
-\textit{Participant \#7} explaining that Skatteetaten have a high degree of automated tests, and do perform any accepts tests, which were years since last were done. Skatteetaten has also experimented with the use of automated testing, such as the amount of automated tests being written is the correct amount. If to many are written it becomes a large task to maintain all the automated tests. So it has been a challenge for Skatteetaten to find the balancing point on what is the right amount of automated tests.
+%\textit{Participant \#1} explaining that most agencies in the Norwegian public sector use regression testing to test their software, and are trying to automate as much as possible in testing. However some testing is still done manually, such as exploitative testing and having the customer involved in the testing activities.
 
-\textit{Participant \#8} explaining that to be able to change a piece of software, the software needs to have a high test coverage. A method is tested on the lower level with unit-tests, then the whole unit or application which the method is a part of is tested. If using a microservice architecture where there is interaction and values between the application, then testing is needed at all levels. This to ensure that everything works as intended and changes in a piece of software does not lead to any faults which leads to the software crashing.
+%\textit{Participant \#1} describing that in the "Perform project" at the Norwegian Public Service Pension fund extra systems for testing their solution with simulated data. While at the development of the new system for distributing parental benefits at NAV, more traditional methods were used to test the system with simulated data.
+
+%\textit{Participant \#3} explaining that continuous delivery is something which takes a lot of effort to get working properly, which includes writing tests. Tests are being written to make sure that there is a web of security around the software being created, so that the chance of something faulty being delivered is a low as possible. The chance of faults will never be 0, but trying to get it as low as possible within reason. 
+
+%\textit{Participant \#4} explaining that in order to deploying smaller and more frequent changes to a piece of software, automated quality checks are needed.
+
+%\textit{Participant \#6} explaining that in order to create software that is able to change a lot has to be in place, such as testing. Testing being the most important measure to make sure that a piece of software can change over time.
+
+%\textit{Participant \#7} explaining that Skatteetaten have a high degree of automated tests, and do perform any accepts tests, which were years since last were done. Skatteetaten has also experimented with the use of automated testing, such as the amount of automated tests being written is the correct amount. If to many are written it becomes a large task to maintain all the automated tests. So it has been a challenge for Skatteetaten to find the balancing point on what is the right amount of automated tests.
+
+%\textit{Participant \#8} explaining that to be able to change a piece of software, the software needs to have a high test coverage. A method is tested on the lower level with unit-tests, then the whole unit or application which the method is a part of is tested. If using a microservice architecture where there is interaction and values between the application, then testing is needed at all levels. This to ensure that everything works as intended and changes in a piece of software does not lead to any faults which leads to the software crashing.
 
 \subsection{Technical Debt}
 \textit{Participant \#1} explaining that being able to register technical debt can be important for software quality as it enables knowledge in what should be done in the future and having knowledge on potential vulnerabilities in a system.
@@ -166,6 +171,8 @@ It is also described that inspection through monitoring and monitoring metrics i
 \textit{Participant \#1} explaining that in agile methods, it is meant to be used as a method to maintain high software quality throughout the lifetime of the software. That you should not compromise on quality to quickly finish a feature, instead compromising on the amount of user stories or features of the software.
 
 \textit{Participant \#1} explaining that in NAV's project to develop an new system for distributing parental benefits, most agile practices were followed in order to obtain good quality in the systems software.
+
+\textit{Participant \#1} explaining that in agile methods there should not be a head of architecture who controls everything. Rather the head of architect should have dialogue with each team and should with the teams agree on good architectural decisions. 
 
 \textit{Participant \#2} explaining that in the democratic principle where a country has power over their users, the country has to make sure they treat their feedback from their users properly. However this can be a challenge, as not many users in the Norwegian public sector wants to give their feedback, they just want the software to work.
 
@@ -328,6 +335,8 @@ To help with this, Mattilsynet has a central team for security which works close
 \textit{Participant \#7} also explaining that the research by Torgeir Dingsrøyr from NTNU about NAV talks a lot about coordinating teams and steering of development direction. The politicians in Norway will always give Skatteetaten new things to do or existing things to change. Thus creating the need for coordination between product areas, multiple teams and multiple parts of the business operations at Skateetaten.
 
 \textit{Participant \#7} also explaining that many thinks of product teams as something quite stable. However this is something which can be unwanted from the perspective of the organisation, wanting for the product teams to be more flexible. However when the organisation tries to change the staffing in an product team or development are, a lot of resistance is encountered. This due to the staff enjoying the team or area to which they belong, with the people they already work with. So organising around product teams can create stiffness in the organisation.
+
+\textit{Participant \#7} explaining that Skatteetaten as a different strategy and a higher architecture than NAV has. Skatteetaten has an increased focus on common components or the re-use of components. When having a high degree of reuse, it lets Skatteetaten get more quickly done with certain tasks.
 
 \textit{Participant \#8} explaining that in the process of making software, 20\% of the time is used to create the software. While the last 80\% is used to maintaining the software.
 
