@@ -1,7 +1,13 @@
 \chapter{Results}
 
-\section{Perspectives of Software Quality}
+\textcolor{red}{
+\begin{enumerate}
+    \item Se over hva som må forklares i Background
+    \item Se over hva som faktisk passer inn med promplemstillingen
+\end{enumerate}
+}
 
+\section{Perspectives of Software Quality}
 \subsection{Definition}
 The results from the interviews in the case study show that the participants have different perspectives on software quality and software quality assurance.
 
@@ -167,36 +173,54 @@ A Gartner-report on Mattilsynets system "Mats" in 2012 allegedly described that 
 %\textit{Participant \#11} explaining that Mattilsynet has older software which are good in quality when it comes to downtime and other operational requirements. However they are lacking in quality when it comes to technical debt and usability. The new applications of Mattilsynet has better usability and has overall better quality.
 
 \subsection{Measurements}
-\textit{Participant \#5} explaining that there is a strong focus on measurements, that systems are being measured on how they behave, where are there downtime, where are there not downtime, are there any response-problems. It is up to each team at NAV how they measure their software, but it is encourage that they do, to understand what state their software is in and have a good understanding of it.
+The system NAV uses in their operations have a strong focus on measurements, being that they are measured in how they behave, where in the system are there downtime and where are there not downtime, are there any response problems, etc. It is up to each team at NAV how they measure their systems when in operations, while it is encourage that they do, to have a good understanding of what state their system is at all times.
 
-\textit{Participant \#7} explaining that his impressions that that there are little faults in the software at Skatteetaten. If looking that the processing for calculating how much taxes is owed in Norway and the amount is sent out to the citizens of Norway, which only happens once a year. During each time, the faults is being measured and fixed. The next year the same faults are not measured, new faults arise. However it is still of high quality.
+It is the belief that the software at Skatteetaten are of few faults. For instance if looking at the process for calculating how much taxes is owed in Norway. First Skatteetaten calculate how much each citizen in Norway owe them, or how much Skatteetaen owe the citizen. Then this amount is sent out to each citizen of Norway, which only takes place once a year. Each time this takes place, Skatteetaten measure faults in the systems responsible for this process. The faults measured then get fixed, and the next year none of these faults appear again. New faults may arise the next year, but the system is still descibed as of high quality due to their measurements.
+
+%\textit{Participant \#5} explaining that there is a strong focus on measurements, that systems are being measured on how they behave, where are there downtime, where are there not downtime, are there any response-problems. It is up to each team at NAV how they measure their software, but it is encourage that they do, to understand what state their software is in and have a good understanding of it.
+
+%\textit{Participant \#7} explaining that his impressions that that there are little faults in the software at Skatteetaten. If looking that the processing for calculating how much taxes is owed in Norway and the amount is sent out to the citizens of Norway, which only happens once a year. During each time, the faults is being measured and fixed. The next year the same faults are not measured, new faults arise. However it is still of high quality.
 
 \subsection{Software Properties}
-\textit{Participant \#9} explaining that easily accessible data is important for software to be of good quality. How data is store and retrieved in a system is important. If a systems quality should be assessed today it would be based on how its data interfaces with other applications. Today it is expected for an application to have accessible API so that its easy to get its data, and its not possible with everything that follows in good software quality such as the correct architecture and mindset on building a solution.
+A property described as being an indicator for a piece of software to be of good quality, is that the data it serves is easily accessible. If a systems quality at Mattilsynet should be assessed today, it would be based on how its data interfaces with other applications. Today it is expected for an application to have accessible API's so that it is predictable and easy to retrieve its data. This is something which is not possible to achieve without following all aspects of good software quality, such as correct architecture and mindset in building a solution.
 
-\textit{Participant \#10} explaining that an initiative has started at Mattilsynet when a new piece of software is created, the API is created first. This by creating API-contracts using OpenAPI, and designing the API from this. This form of API-contract creating strategy is something that the product-teams at Mattilsynet is going to start doing. This enables the product-teams to discover if an API has already been created by another team, preventing duplicate work.
+This description of software quality has also led to new initiatives being started at Mattilsynet, where when a new piece of software is create, it's API is created first. This is done by creating API-contracts using OpenAPI, and designing the API from these contracts. This form of API-contract creating strategy is something that the product-teams at Mattilsynet is going to start doing. Thus enabling the product-teams to discover in an API has already been created by another team, preventing duplicate work.
 
-\textit{Participant \#10} also explaining that the publish-subscribe pattern is used to share sets of data between applications through data-streams, both inside and outside Mattilsynet. There was a case where Nortura wanted data from Mattilsynet on what restrictions an animal has, such as what medication an animal is using. Instead of asking Mattilsynet for this data, Nortura can just retrieve one of Mattilsynets data-streams on the API-level. This also gives a loose coupling between Mattilsynet and Norturas software, meaning that Norturas systems will not crash if Mattilsynets systems are down.
+Mattilsynet also using other data-sharing patters to increase the quality of their services, such as the publish-subscribe pattern. This enables Mattilsynet to share sets of data between applications through data-streams, both internally and externally of Mattilsynet. For instance when Nortura wanted data from Mattilsynet on what restrictions an animal has, such as what medication the animal is using. Instead of constantly asking Mattilsynet for this data, Nortura can simply retrieve one of Mattilsynets data-streams on the API-level. This also has the effect of creating a loose coupling between Mattilsynets and Norturas software, meaning that Norturas software will not fault if Mattilsynets software are unavailable.
+
+%\textit{Participant \#9} explaining that easily accessible data is important for software to be of good quality. How data is store and retrieved in a system is important. If a systems quality should be assessed today it would be based on how its data interfaces with other applications. Today it is expected for an application to have accessible API so that its easy to get its data, and its not possible with everything that follows in good software quality such as the correct architecture and mindset on building a solution.
+
+%\textit{Participant \#10} explaining that an initiative has started at Mattilsynet when a new piece of software is created, the API is created first. This by creating API-contracts using OpenAPI, and designing the API from this. This form of API-contract creating strategy is something that the product-teams at Mattilsynet is going to start doing. This enables the product-teams to discover if an API has already been created by another team, preventing duplicate work.
+
+%\textit{Participant \#10} also explaining that the publish-subscribe pattern is used to share sets of data between applications through data-streams, both inside and outside Mattilsynet. There was a case where Nortura wanted data from Mattilsynet on what restrictions an animal has, such as what medication an animal is using. Instead of asking Mattilsynet for this data, Nortura can just retrieve one of Mattilsynets data-streams on the API-level. This also gives a loose coupling between Mattilsynet and Norturas software, meaning that Norturas systems will not crash if Mattilsynets systems are down.
 
 \section{Methodological}
 \subsection{Agile}
-\textit{Participant \#1} explaining that by using agile methods you demonstrate the software being developed, and at each demonstration feedback will be given about the software quality.
+The Norwegian public sector is not concerned with assuring software quality through strict regimes, through projects which were quite common before. However not is is based upon getting feedback from its users. If the user do not experience any faults with the software, then it is of high quality. If the user find that the software is of value, then it is of high quality.
 
-\textit{Participant \#1} explaining that at the perform project at the Norwegian pension fund, they had frequent demonstrations of the system they were creating.
+Retrieving continuous feedback on piece of software is a method which is used to assess the quality of the piece of software. A method for feedback is to demonstrate the software being developed, and at each demonstration retrieve feedback on the quality of the software. Such demonstrations were also performed frequently at the development in the "Perform project" at the Norwegian Public Service Pension fund.
+
+The principle of retrieving continuous feedback in the Norwegian public sector can be a challenge, as the citizens of Norway usually are not interested in giving feedback, only being interested in that the software functions correctly. This challenge increases as handling proper feedback in a public sector from its citizens is important due to the democratic principle of the public sector having power over their users. Also for the users to be willing to give their feedback in a public sector, the users have to trust that the particular public sector will not use the data against their user. This is not seen as a challenge in the private sector, due to them not having the same power over their users.
+
+In NAV's project to develop a new system for distributing parental benefits, most agile practices where followed in order to obtain good quality in the systems software.
+
+%\textit{Participant \#1} explaining that by using agile methods you demonstrate the software being developed, and at each demonstration feedback will be given about the software quality.
+
+%\textit{Participant \#1} explaining that at the perform project at the Norwegian pension fund, they had frequent demonstrations of the system they were creating.
 
 \textit{Participant \#1} explaining that in agile methods it is primarily a customer which is receiving a product, and that it is primarily the product owner which follows the development team, and must be able to give feedback on the most important aspects in software quality, and if it is good enough.
 
 \textit{Participant \#1} explaining that in agile methods, it is meant to be used as a method to maintain high software quality throughout the lifetime of the software. That you should not compromise on quality to quickly finish a feature, instead compromising on the amount of user stories or features of the software.
 
-\textit{Participant \#1} explaining that in NAV's project to develop an new system for distributing parental benefits, most agile practices were followed in order to obtain good quality in the systems software.
+%\textit{Participant \#1} explaining that in NAV's project to develop an new system for distributing parental benefits, most agile practices were followed in order to obtain good quality in the systems software.
 
 \textit{Participant \#1} explaining that in agile methods there should not be a head of architecture who controls everything. Rather the head of architect should have dialogue with each team and should with the teams agree on good architectural decisions. 
 
-\textit{Participant \#2} explaining that in the democratic principle where a country has power over their users, the country has to make sure they treat their feedback from their users properly. However this can be a challenge, as not many users in the Norwegian public sector wants to give their feedback, they just want the software to work.
+%\textit{Participant \#2} explaining that in the democratic principle where a country has power over their users, the country has to make sure they treat their feedback from their users properly. However this can be a challenge, as not many users in the Norwegian public sector wants to give their feedback, they just want the software to work.
 
-\textit{Participant \#2} also explaining that the Norwegian public sector is not concerned about assuring quality through strict regimes, like through projects which were very common before. However now it is based upon getting feedback from the users. If software do not crash on the user, the quality is high, if the user find it valuable and good, it is of good quality.
+%\textit{Participant \#2} also explaining that the Norwegian public sector is not concerned about assuring quality through strict regimes, like through projects which were very common before. However now it is based upon getting feedback from the users. If software do not crash on the user, the quality is high, if the user find it valuable and good, it is of good quality.
 
-\textit{Participant \#2} also explaining that a challenge in the Norwegian public sector is to gather data about their users. The users must be willing to tell if they are satisfied, and since the Norwegian public sector have power over their users, its important that the user trusts the public sector to give away their data, and their feedback will not be used against them. This is easier in the private sector as they do not have the same power over their users.
+%\textit{Participant \#2} also explaining that a challenge in the Norwegian public sector is to gather data about their users. The users must be willing to tell if they are satisfied, and since the Norwegian public sector have power over their users, its important that the user trusts the public sector to give away their data, and their feedback will not be used against them. This is easier in the private sector as they do not have the same power over their users.
 
 \textit{Participant \#3} describing that software quality does not have so much to do with ISO standards, but being able for a team to be able to change in their development of a system. Setting ability to change as similarities to quality in the software NAV creates. This because the development teams might not know what is correct or best when developing software in a world which is always changing. The development teams does not want any faults in their software, however since the world around the software is always changing, the teams have to guard against eventual faults and ensure that the consequences are as low as possible.
 
