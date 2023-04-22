@@ -5,12 +5,44 @@ The Norwegian public sector is a collective term for the state administration an
 \subsection{Norwegian Labour and Welfare Organization (NAV)}
 The Norwegian Labour and Welfare Organisation, or NAV, is a central agency in the Norwegian public sector which provides social and economic security to the citizens of Norway, while encouraging a transition to activity and employment \cite{nav_r_2023}. NAV is partnered with the municipalities in Norway, and has about 22 000 employees, where about 15 500 is employed to the Norwegian state, and 6 500 employed in the municipalities \cite{org_nav_2023}. 
 
+\subsubsection{NAIS}
+NAIS is NAV's application platform that provides a range of services to product-teams at NAV, intended to make it easier for the product-teams themselves to develop and maintain typical "NAV-applications". NAIS provides services which includes, but are not limited to: logging, metrics, deployment, operators, and runtime environments. Which all are managed on their \gls{kubernetes} clusters \cite{nais_2023}.
+
 \subsection{Norwegian Tax Administration (Skatteetaten)}
 The Norwegian Tax Administration, or Skatteetaten, are responsible for ensuring that taxes and other claims in Norway are correctly assessed and paid. It also ensures that the Norwegian National Registry is up to date \cite{skatt_r_2023}. As of 2019, Skattetaten has about 6 300 employees \cite{skatt_r_2023}. 
 
 \subsection{Norwegian Food Safety Authority (Mattilsynet)}
 The Norwegian Food Safety Authority, or Mattilsynet, are responsible for promoting animal and human health in Norway by supervising the different food chains in Norway, all from the farms or fisheries, to the food Norwegians eat from said farms and fisheries \cite{mat_r_2023}. As of 2023, Mattilsynet has about 1 300 employees, stationed in offices all regions of Norway \cite{org_mat_2023}.
 
+\subsection{Norwegian Digitisation Agency (Digdir)}
+The Norwegian Digitisation Agency, or Digdir, are responsible for the development and maintenance of development and services used across the Norwegian public sector. Digdir also has the responsibility of strategic coordination of digitisation across the Norwegian public sector \cite{digdir_r_2023}.
+
+\subsubsection{Project Wizard}
+The project wizard delivered by the Norwegian Ministry of Finance is a set of requirements that any digitisation projects with a total cost of equal to or above 300 Million NOK have to follow. The requirements including the project to be externally evaluated before presented to the Norwegian government and the Norwegian Storting. This to avoid faulty investments and keeping control of spending in the project, assuring efficient use of the funding from the Norwegian taxpayer \cite{project_wizard_r_2019}.
+
+The project wizard have the following phases which are to be followed by any projects: (I) Idea, (II) Concept, (III) Preliminary project, and (IV) Implementation.
+
+\paragraph{Idea}
+The idea phase is used to identify any problems that could be suited as a project in the Norwegian public sector and considering if the problem should be investigated further. For the larger projects, the result of the idea phase will become a mandate for the concept phase \cite{project_wizard_r_2019}.
+
+\paragraph{Concept}
+In the concept phase the problem is described in detail and how the project should solve the problem. Future needs of the Norwegian society and goals of the performed projects are also described. Multiple concepts of the project should also be proposed in this phase, which are then subject to a sosio-economic analysis. This to decide which concept is the best and what circumstances is needed for further planning to be successful \cite{project_wizard_r_2019}. This choice of concept is performed by independent, external experts before a concept can be approved by the Norwegian government.
+
+\paragraph{Preliminary project}
+The preliminary project phase then has the responsibility of setting the basis for management and estimates of costs for the chosen project. In this phase documents which describe how the project should be performed by further planning of what should be built or developed. And developing more detailed cost estimates and how uncertain these cost estimates are. How the project should be managed to keep eventual costs controlled and the project reaching its set goals. The preliminary project phase also considers which contracts are needed with possible suppliers to deliver what the project needs to meet its set goals.The quality of the basis of management and cost estimates are then assured before the project investment and cost framework can be approved by the Norwegian Storting \cite{project_wizard_r_2019}. 
+
+\paragraph{Implementation}
+After the project has been approved by the Norwegian Storting, the implementation of the project is begun.
+
+The Norwegian digitisation agency have also described two phases which occur after implementation for digitisation projects: (V) Closing, and (VI) Realisation.
+
+\paragraph{Closing}
+After what is built or developed is complete, the closing phase is started. The closing phase ensures a structured and formal closing of the project, as well as a good handover of the project to the organisation responsible for manageability \cite{project_wizard_digdir_2023}. 
+
+\paragraph{Realisation}
+When the project has been transferred, the project is evaluated for further realisations of gains and if the project has reached the goals which were set in the concept phase \cite{project_wizard_digdir_2023}.
+
+\subsection{Other Agencies}
 \textcolor{red}{
 \begin{itemize}
     \item Få inn statens pensjonskasse her?
@@ -25,15 +57,8 @@ The Norwegian Food Safety Authority, or Mattilsynet, are responsible for promoti
 \end{itemize}
 }
 
-\textcolor{red}{
-\begin{itemize}
-    \item Få snakket om NAIS? Kanskje under NAV?
-    \item Få inn prosjektveiviseren til digdir? Kansje under digdir? Også PRINCE2?
-\end{itemize}
-}
-
 \subsection{Digitalisation in the Norwegian public sector}
-The government of Norway has in the last decades has an increased focus on digitalisation of the Norwegian public sector, with the most recent digitalisation strategy from 2019-2015 \cite{r_2019}. The main goal of the digitalisation strategy is for different actors in the Norwegian public sector to co-operate by the development of shared digital eco-systems. The goal of this development project is to aid the development of user-centred system development for a more effective and coordinated exploitation of the Norwegian public sectors IT-systems \cite{r_2019}.
+The government of Norway has in the last decades has an increased focus on digitalisation of the Norwegian public sector, with the most recent digitalisation strategy from 2019-2025 \cite{r_2019}. The main goal of the digitalisation strategy is for different actors in the Norwegian public sector to co-operate by the development of shared digital eco-systems. The goal of this development project is to aid the development of user-centred system development for a more effective and coordinated exploitation of the Norwegian public sectors IT-systems \cite{r_2019}.
 
 \section{Software Quality}
 As stated in \autoref{sec:motivation}, software quality is defined as how well a piece of software is measured against a chosen set of non-functional requirements, chosen based on the software's functional requirements \cite{iso_25010:2011}. 
