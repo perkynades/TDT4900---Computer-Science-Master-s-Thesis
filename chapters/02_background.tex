@@ -94,17 +94,24 @@ Acceptance testing is a variant of software testing where a piece of software is
 \subsection{Automated Testing}
 Automated testing is the use of software separate from the software being tested to control its quality trough automated mechanisms. In automated testing the predicted outcome of a functionality is compared with the actual outcome. And is suited for repetitive testing tasks in a formalised testing process which would be difficult to do manually \cite{test_automation_wiki_2023}.
 
-\section{DevOps}
-
-\subsection{Continuous Integration}
-
-\subsection{Continuous Delivery}
-
-\subsection{Continuous Deployment}
-
 \section{Software Development Methods}
 \subsection{Waterfall}
+The waterfall method is a software development method in which the phases of a software project is split up in sequential phases. These phases are most common: (I) Requirement specification, (II) Design, (III) Implementation, (IV) Verification, (V) Delivery, and (VI) Maintenance. The waterfall method is described as less iterative and flexible than other software development methods as progress flows in a singular direction \cite{waterfall_model_wiki_2023}.
+
 \subsection{Agile}
+
+
+\subsection{DevOps}
+DevOps, short for development operations is a software development methodology where a set of tools to integrate development and operations in order to shorten the development life cycle. DevOps is a methodology which is complimentary to the agile software development method \cite{devops_wiki_2023}. The DevOps methodology has 3 main components: (I) Continuous Integration, (II) Continuous Delivery, and (III) Continuous Deployment.
+
+\subsubsection{Continuous Integration}
+In continuous integration all developers in a development team are continuously merging their work into the main code repository. With each merge usually resulting in a workflow being triggered, which tests and build the current code repository \cite{continuous_integration_wiki_2023}.
+
+\subsubsection{Continuous Delivery}
+In continuous delivery, the development teams produce a piece of software in short cycles, to ensure that a piece of software can be delivered at any time trough an automated delivery pipeline. Allowing more incremental updates to be delivered, reducing the risk of delivering faulty software \cite{continuous_delivery_wiki_2023}.
+
+\subsubsection{Continuous Deployment}
+Continuous deployment is the technical aspects of continuous delivery, and is the automated system, set up to deliver updates trough its delivery pipeline. This delivery pipeline is usually set up to run automated tests, which block further delivery if any test fails. If all tests pass, the software update is built and delivered \cite{continuous_deployment_wiki_2023}.
 
 \section{Product-Teams}
 
