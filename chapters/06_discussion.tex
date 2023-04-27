@@ -1,11 +1,11 @@
 \chapter{Discussion}
 As mentioned by multiple participants in the interviews, it is important to consider the context of the software, when assuring quality in that software. This could be seen as important for each agency in the Norwegian public sector, and the whole sector itself. Some aspects regarding software quality and its assurance such as DevOps and product teams in the Norwegian public sector are true for the whole software development industry. While other factors such as allocation of resources and it's effect on how software is developed and it's quality seems to be a somewhat unique for the Norwegian public sector.
 
+\textcolor{red}{Kanskje viktig å nevne at definisjonen av programvare kvalitet er veldig kompleks, og det å sikre god kvalitet har vist seg å være enda mer komplekst}
+
 \textcolor{red}{When striving for high software quality, there are several challenges in the process of assuring software quality. (I) Software requirement challenges, (II) Stakeholders perspective challenges, and (III) General challenges \cite{sh_2018}. Software requirement challenges concerns challenges related to the project itself and effects of software quality which are not visible until after the projects implementation or maintenance period \cite{sh_2018}. Stakeholder perspectives challenges concerns the challenges which the different stakeholders might have when asserting quality in software \cite{sh_2018}. General challenges concerns challenges in assuring quality in software which are common for all organisations involved in creating and delivering software \cite{sh_2018}.}
 
 \textcolor{red}{Snakke om hvordan problemene til norsk offentlig sektor passer inn her? SE OVER}
-
-Culture is also stated as important, due to it boosting software quality through integration, evaluation and sharing of knowledge \cite{smm_2018}.
 
 \section{Practices}
 \textcolor{red}{en av de mest vanlige ikke-funksjonelle kravene som definerer kvalitet er sikkerhet -> sikkerhet er viktig blandt etatene i norsk offentlig sektor, programvaren og dataen den holder på er av stor verdi -> de bruker flere forskjellige metdoer og organiseringer for å sikre seg at programvaren er sikker -> This also implies to security, as weak security of software can have larger consequences and costs to fix if discovered after the software delivered to the customer \cite{csw_2011}}
@@ -16,11 +16,10 @@ Culture is also stated as important, due to it boosting software quality through
 
 \textcolor{red}{viktigheten av å kunne registrere teknisk gjeld er viktig -> teknisk gjeld er beskrevet som det motsatte av god kvalitet -> virker som det er en del teknisk gjeld i offentlig sektor, som man nødvendigvis ikke får gjort så mye mer, som med "Mats" som er beskrevet til å koste mattilsynet 10 milliarder NOK over 15 år -> man har ikke nødvendigvis tid å ressurser til å fikse det der og da, men siden det er registrert kan man gjøre visse tilltak for å minimere risikioen av teknisk gjeld}
 
+\textcolor{red}{for å slippe å styre med CodeQL og code reviews for å forsikre at koden er av kvalitet, så kan man kjøre par- og mob-programmering istedenfor -> da får man også med alle godene som følger med, som økt eierskap og kunnskap til koden, som forhindrer feil -> kan være viktigere i offentlig sektor siden prosjektene kan være større og mer komplekse enn i privat sektor, som gjør eierskap og kunnskap om koden enda viktigere}
+
 \textcolor{red}{programvare med spesielle typer egenskaper er sagt til å være av høyere kvalitet, slik som mattylsynet gjør med OpenAPI, API-first utvikling, og publis-subscribe datastrømmer -> mattilsynet skal begynne å "kreve" at andre team må gjøre det samme for å sikre gjenbruk og at all programvare er av høy kvalitet -> kanskje dette er noe av de andre etatene også skal gjøre for å sikre høy kvalitet -> kan kanskje skape litt problemer, siden autonomitet er en viktig del av produkt team, og de blir kanskje presset på noe som ikke passer det domenet og det produkt teamet bygger, som da gir lavere kvalitet}
 
-\textcolor{red}{However it was stated that the effects of testing in DevOps environments had not been studied systematical by scientific literature \cite{dsc_2019}\cite{ja_2016}.}
-
-\textcolor{red}{Snakke om hvordna par-programmering og mob-programmering øker kvalitet, samt at det øker hastigheten og det blir lettere å gjøre endringer}
 
 \section{Methodology}
 The results from the study show that the agencies interviewed have a different perspective on software quality, and its assurance, than the traditional ISO standards which focus on non-functional requirements. Instead describing software quality as how easy it is to mutate a piece of software based on new feedback from the user. And if the user find that the software is of quality and of value to the user, the agencies think their software is of high quality. Software quality being user-centred, not measurable non-functional requirements.
@@ -37,10 +36,16 @@ It could therefore be seen as quite tempting to introduce DevOps as a measure du
 
 %\textcolor{red}{det å introdusere DevOps kan virke fristende siden de fleste gjør det, men det kan være fallgruver --> It is also shown that introducing DevOps to an organisation can hinder the assurance of software quality if not addressed to properly \cite{dsc_2019}. The product teams have to rethink their roles and responsibilities towards quality assurance, by shifting from specific roles to raising the quality assurance competence of all members in the product team \cite{dsc_2019}. The product teams have to take an end-to-end responsibility for the content being produced, meaning that the entire product team must be involved in the quality assurance of the content in its entire life \cite{dsc_2019}.}
 
+\textcolor{red}{det er folk som mener at effectene av DevOps ikke har blitt undersøkt fult -> However it was stated that the effects of testing in DevOps environments had not been studied systematical by scientific literature \cite{dsc_2019}\cite{ja_2016} -> kan være en ide å ta effektene som prates om av DevOps med en klype salt -> kan heller være et organisatorisk fokus på hyppighet, ikke nødvendigvis DevOps}
+
 \textcolor{red}{DevOps blir brukt som en måte å skaffe feedback fra brukeren -> lar brukeren få nye oppdateringer mye kjappere, endringene mot brukerne er relativ lite -> kan virke som en motsatt vei å gå for å sikre kvalitet mot brukeren, men med små hyppige endringer så er risikioen får at noe går veldig galt liten -> verdien av DevOps er høyere en eventuell skade ved å dytte ut ting raskere. (SE PÅ DENNE SENERE OM DEN IKKE HAR BLITT DEKKET SKIKKELIG)}
 
-\section{Organisation}
-\textcolor{red}{Få inn hvordan team er strukturert og hvordan det kan føre til økt kvalitet}
+\section{Development Teams}
+\textcolor{red}{det vises at hvem som har ansvaret for å sikre kvalitet ligger felles blant et helt team -> noe som kan ha endret seg siden teamene er organisert i produkt team i autonomitet -> gått bort i fra sentraliserte sjekklister -> dette kan gi økt kvalitet fordi hvert team får bestemme selv hvordan de får utikle, noe som kan gi mer eierskap til programvaren de lager}
+
+\textcolor{red}{Tverrfaglige team  for bedre kvalitet -> er viktig i offentlig sektor siden prosjektene kan være større og mer komplekse -> prosjektene har flere aspekter og dermed trenger flere ekspertiser på plass -> dette så man med Helseplatformen der man ikke hadde UX-designere, så man visste at usability kvaliteten ville være dårlig}
+
+\textcolor{red}{produkt teamene hos mattilsynet har full autonomitet, men det kan fortsatt være nødvendig å ha alignment i hvordan det ønskas at de skal jobbe -> ved å ikke ha alignment på teknologi så kan de bli veldig mye forskjellig som blir brukt, noe som skaper teknisk gjeld, det motsatte av god kvalitet -> uten alignment så kan også meningen med produkt team gå bort, at de løser det riktige problemet, noe som er beskrevet som enda viktigere en god kvalitet -> det er ikke vits å lage noe som har kjempehøy kvalitet, hvis det ikke løser riktig problem, da har du sløst bort tid og ressurser}
 
 \section{Financing and Resources}
 All agencies in this study described their main challenge when ensuring that their software is of high quality, is the lack of IT-resources available. It was described at NAV that it did not have the necessary resources to deal with the \gls{technical_debt} in their payment system. If this system fails due to this, it's negative consequences could go beyond the specific citizen not receiving their payment. But the Norwegian society and economy as a whole being negatively effected. 
@@ -82,11 +87,10 @@ It could therefore be seen that no matter how much the Norwegian government wish
 
 These reflections on software quality from the participants can seem to contract somewhat. It is said that for a piece of software in the Norwegian public sector to be of high quality, it needs to adhere to legal requirements. However also stating that the same legal requirements are creating challenges to provide software which is of high quality. This contradicting views on high software quality can create false expectations of the software, leading to potential resources wasted, which could go into improving the quality of other software. Reducing the problem of not having enough resources to meed the unclear standards of the software.
 
-\section{Cooperation between agencies}
+\section{Cooperation Between Agencies}
+\textcolor{red}{Her må jeg snakke om hva som driver utvikling i etatene, og hvordan dette ikke passer inn med regjeringens mål om å en "felles samarbeidsplatform på tvers av etater for å gjøre tjenstene til etatene bedre"}
 
 \textcolor{red}{DevOps is expected to bring the different agencies in the public sector closer, increasing knowledge culture and collaborative work \cite{mm_2021}, which is shown to increase software quality \cite{smm_2018}.}
-
-\textcolor{red}{Her må jeg snakke om hva som driver utvikling i etatene, og hvordan dette ikke passer inn med regjeringens mål om å en "felles samarbeidsplatform på tvers av etater for å gjøre tjenstene til etatene bedre"}
 
 \textcolor{red}{Knapt ressurser til å utvikler hva som er "leagaly requirered" -> Må få mer ressurser hvis regjeringen ønsker samarbeid}
 
