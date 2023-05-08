@@ -2,6 +2,8 @@
 
 \textcolor{red}{Få inn en intro her}
 
+\textcolor{red}{Få inn en intro-tekst på hvert avsnitt (subsection)?}
+
 \section{Perspectives of Software Quality}
 The results from the interviews in the case study show that the participants have different perspectives on software quality and software quality assurance.
 
@@ -70,14 +72,25 @@ At NAV, non-functional requirements has been described as quality requirements o
 %\textit{Participant \#11} describing good usability as important in software quality, that the user should feel that a piece of software is of quality, the visual aspect is perceived as attractive. Also describing software quality is that piece of software is stable, secure and robust.
 
 \section{Technical}
+
+\textcolor{red}{Få inn en intro her}
+
 \subsection{Security}
-In the development process of NAV's new systems for distributing parental benefits, how security has been assured in the system has changed. Initially only specific persons had the responsibility for security, however when the project was complete in 2019, each team had a specific person with knowledge in security. Other projects such as "Perform Project" at the Norwegian Public Service Pension Fund had a more central control of security in its requirements, which the development teams had to take into account.
+How quality in security is assured, is explained by participant \#1 to differ between agencies and projects. In the development process of NAV's new systems for distributing parental benefits, how security has been assured in the system has changed. Initially only specific persons had the responsibility for security, however when the project was complete in 2019, each team had a specific person with knowledge in security. Other projects such as "Perform Project" at the Norwegian Public Service Pension Fund had a more central control of security in its requirements, which the development teams had to take into account.
 
-The requirements for security at Skatteetaten are and has always been strict, due to Skatteetaten's software  being constantly exposed to cyber attacks. This and a general lack of development resources has resulted in Skatteetaten prioritising security over other requirements and functionalities. Meaning that Skatteetaten's users might have to accept software which lacks in usability and functionality. This focus on strict security requirements are described as being the same for NAV, as it is for Skatteetaten.
+%In the development process of NAV's new systems for distributing parental benefits, how security has been assured in the system has changed. Initially only specific persons had the responsibility for security, however when the project was complete in 2019, each team had a specific person with knowledge in security. Other projects such as "Perform Project" at the Norwegian Public Service Pension Fund had a more central control of security in its requirements, which the development teams had to take into account.
 
-One of the methods that Skatteetaten use to ensure security in their systems, is by all events in their systems being logged. Whenever a network-call is made, someone does a direct look-up in a database etc. It is audit-logged. This so that either someone with authorised permissions is abusing their permissions, or someone with unauthorised permissions will be logged and exposed.
+The requirements for security at Skatteetaten is described by participant \#7 as being and has always been strict: "We are constantly exposed to attacks, so the requirements and quality of security solutions have always been very high". Explaining that the focus on security and a general lack of development resources has resulted in Skatteetaten prioritising security over other requirements and functionalities. And therefore Skatteetaten's users might have to accept software which lacks in usability and functionality. Participant \#7 describing this focus on strict security are the same for NAV, as it is for Skatteetaten.
 
-Analysis such \gls{ros_analysis} is done to ensure that quality requirements such as security is met at Mattilsynet. However \gls{ros_analysis} is also done to ensure that other quality requirements than just security is also met.
+%The requirements for security at Skatteetaten are and has always been strict, due to Skatteetaten's software being constantly exposed to cyber attacks. This and a general lack of development resources has resulted in Skatteetaten prioritising security over other requirements and functionalities. Meaning that Skatteetaten's users might have to accept software which lacks in usability and functionality. This focus on strict security requirements are described as being the same for NAV, as it is for Skatteetaten.
+
+For Skatteetaten to ensure their strict requirements for security, participant \#8 explaining that all events in Skatteetaten's systems is logged. For example, whenever a network-call is made or someone does a direct look-up in a database, it is audit logged. Explaining it's reason being so that when either someone with authorised permissions is abusing their permissions, or someone with unauthorised permissions will be logged and exposed.
+
+%One of the methods that Skatteetaten use to ensure security in their systems, is by all events in their systems being logged. Whenever a network-call is made, someone does a direct look-up in a database etc. It is audit-logged. This so that either someone with authorised permissions is abusing their permissions, or someone with unauthorised permissions will be logged and exposed.
+
+To ensure that quality requirements such as security is met at Mattilsynet, participant \#9 explaining that analysis such as \gls{ros_analysis} is used. Also explaining that the \gls{ros_analysis} is used to to ensure that other quality requirements than just security is met.
+
+%Analysis such \gls{ros_analysis} is done to ensure that quality requirements such as security is met at Mattilsynet. However \gls{ros_analysis} is also done to ensure that other quality requirements than just security is also met.
 
 %\subsection{Security}
 %\textit{Participant \#1} explaining that at the development of the new system for distributing parental benefits at NAV, in the beginning specific persons had the responsibility for security. The project was done in 2019, and at that point each team had a specific person with knowledge in security. 
@@ -93,15 +106,21 @@ Analysis such \gls{ros_analysis} is done to ensure that quality requirements suc
 %\textit{Participant \#9} explaining that at Mattilsynet a lot of ROS analasys is done to ensure quality in secruity, the ROS does also work as a more general ensuring of quality in the software being analysed.
 
 \subsection{Inspection}
-It is the belief that many development teams in the Norwegian public sector use code inspection as a tool to find faults in their software. As well as new code having to be inspected before it is allowed to be merge into the code repository. This was done at the "Perform project" at the Norwegian Public Service Pension fund.
+It is the belief by participant \#1, that many development teams in the Norwegian public sector use code inspection as a tool to find faults in their software. As well as new code having to be inspected before it is allowed to be merge into the code repository. Participant \#1 that this was done at the "Perform project" at the Norwegian Public Service Pension fund.
 
-When developing a new feature for software at Skatteetaten, at least 2 developers have to be included in a code review process for the developed feature before it is accepted in order to assure that the feature is of quality.
+%It is the belief that many development teams in the Norwegian public sector use code inspection as a tool to find faults in their software. As well as new code having to be inspected before it is allowed to be merge into the code repository. This was done at the "Perform project" at the Norwegian Public Service Pension fund.
 
-Some are hesitant to the use of code inspection tools to increase software quality, such as a developer code review, due to it being time consuming. When asked to perform a code review, a developer has to stop what they are doing, review the code, give their toughs, send the review and repeat the process until the code is of satisfactory quality. The developer then has to get back to the task he/she was doing before the review. This can lead to a code review taking multiple days. The developers could instead have performed \gls{pair_programming}, and the code would be reviewed then and there. 
+%When developing a new feature for software at Skatteetaten, at least 2 developers have to be included in a code review process for the developed feature before it is accepted in order to assure that the feature is of quality.
 
-Recently the developers at Mattilsynet has increased their use of static code analysis tools such as SonarQube. A static code analysis of an large old system at Mattilsynet is said to find 145 critical faults. Which enables Mattilsynet to know that these faults exists and can stat processes to fix these faults. However this is in contrast with an alleged study from Microsoft, which is said to conclude that such code inspection tools only find a limited amount of critical faults. Mostly finding faults in code style and not much else.
+Some developers are hesitant certain code inspection tools to increase software quality, such as developer code review, were explained by participant \#1, due to it being time consuming: "The whole thing can take a number of days, and the one have written must understand what you did again when you received the results of the inspections". Participant \#1 instead recommending to perform \gls{pair_programming}, as to code would have been inspected then and there.
 
-It is also described that inspection through monitoring metrics is a bit weak at Mattilsynet, that it might be to a better standard at other organisations such as Norsk Tipping.
+%Some are hesitant to the use of code inspection tools to increase software quality, such as a developer code review, due to it being time consuming. When asked to perform a code review, a developer has to stop what they are doing, review the code, give their toughs, send the review and repeat the process until the code is of satisfactory quality. The developer then has to get back to the task he/she was doing before the review. This can lead to a code review taking multiple days. The developers could instead have performed \gls{pair_programming}, and the code would be reviewed then and there. 
+
+Mattilsynet's developers recently started to use static code analysis tools. And participant \#10 explained how this is said to find 145 critical faults, enabling Mattilsynet to know that these faults exist, and can start processes to handle them. Something which is in contrast with an alleged study from Microsoft, described by participant \#1. Which is said to conclude that such code inspection tools only find a limited amount of critical faults. Mostly finding faults in code style and not much else.
+
+%Recently the developers at Mattilsynet has increased their use of static code analysis tools such as SonarQube. A static code analysis of an large old system at Mattilsynet is said to find 145 critical faults. Which enables Mattilsynet to know that these faults exists and can stat processes to fix these faults. However this is in contrast with an alleged study from Microsoft, which is said to conclude that such code inspection tools only find a limited amount of critical faults. Mostly finding faults in code style and not much else.
+
+%It is also described that inspection through monitoring metrics is a bit weak at Mattilsynet, that it might be to a better standard at other organisations such as Norsk Tipping.
 
 %\textit{Participant \#1} describing that at the "Perform project" at the Norwegian Public Service Pension fund, they used code inspection as a tool to ensure quality.
 
