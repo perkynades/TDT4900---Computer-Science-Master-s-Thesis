@@ -8,12 +8,10 @@ The results of the interviews conducted for the case study are divided into four
     \item \textit{Organisation} - Organisational aspects influencing the quality assurance of software in the Norwegian public sector
 \end{enumerate}
 
-\textcolor{red}{I hver sub-section, si hvilke participants som nevnte noe om den subsectionen}
-
-\section{Perspectives}
+\section{Perspectives} \label{sec:perspectives}
 The results from the interviews in the case study show that participants \#1, \#2, \#3, \#4, \#6, \#7, \#8, and \#9 conveyed their perspectives on software quality and software quality assurance.
 
-\subsection{Definition}
+\subsection{Definition} \label{sec:definition}
 The word \textit{"quality"} is described by participant \#2 as a word that is difficult to describe: "The word "quality" is a very difficult word. It's a word that everyone feels they understand and know what it is, but no one can really define. Although everyone has some sort of idea that they know what quality is". Further describing that \textit{"software quality"} are words which are not widely used in the Norwegian public sector: "I don't hear many people talking about software quality in the Norwegian public sector".
 
 %The word \textit{"quality"} is a word that is difficult to describe, as it is as word which people think they understand and know what is, however nobody quite know how to define it. People think that something of high quality is something which will last long, something which will give value, something which is good. The words \textit{"software quality"} is something which is not often used in the Norwegian Public Sector.
@@ -29,7 +27,7 @@ Participant \#6 gives multiple definitions to the words \textit{"software qualit
 
 %\textit{Participant \#6} explaining that software quality is the ability for software to change over time. One of NAV's systems for disbursing social securities is about 40 years old and is nation-bearing for Norway. However it is very difficult to change, and has a limited amount of tests. Yet it has solved a problem for over 40 years, so its of good quality in that sense, but yet it so bad in other ways.
 
-\subsection{Context}
+\subsection{Context} \label{sec:context}
 It is described by Participant \#3 that what context the software is situated in, is important for how its quality should be assured. In the context of deciding if software quality should be assured manually by humans, or automatically with computers. Participant \#3 describes both have pros and cons for their respective context: "If you're trying to do most of your quality assurance with computers, then you have the effect that you can do this much faster. However it will mean that something will slip through". The description of context deciding what software quality assurance methods should be used is shared with participant \#6. Describing that NAV's systems for disbursing social securities and sick pay do not use the same quality assurance methods due to their context being different.
 
 %What context the software is situated in, is important for how it's quality should be assured. If creating software for medical machines, which can endanger humans, no faults can be allowed. Hence methods needed to assure quality could be manual and time consuming testing with a high degree of coordination. For software with less consequences of faults, automatic testing as a software quality assurance method can be acceptable.
@@ -49,7 +47,7 @@ Other situations are also important for the context of deciding what software qu
 
 %\textit{Participant \#6} also explaining that the systems such as the system disbursing social securities and sick pay at NAV do not use the same methods to assure software quality. Some have long manual test-processes, while others have automatic testing, and some are in-between with manual testing which are trying to move to automatic tests. Some system have changes which are deployed every third month, while other deploy changes 20 times a day. 
 
-\subsection{Non-functional Requirements}
+\subsection{Non-functional Requirements} \label{sec:non_functional_requirements}
 As described by participants \#1, \#2, \#4, \#7, \#8, and \#9, the definition of software quality is associated with non-functional requirements. Software quality relates to usability, maintainability, performance, security, or the mutability of the software's architecture. As well as manageability, described by participant \#4 as important for software quality. 
 
 %Associations to non-functional requirements are described when it comes to the definition of software quality, that it relates to usability, maintainability, performance, security, or the mutability of the software's architecture. Associations to manageability of the software being created is important for the software quality. These non-functional requirements are also described as being the most important in the technical quality of a piece of software.
@@ -77,10 +75,10 @@ At NAV, non-functional requirements have been described as quality requirements 
 
 %\textit{Participant \#11} describing good usability as important in software quality, that the user should feel that a piece of software is of quality, the visual aspect is perceived as attractive. Also describing software quality is that piece of software is stable, secure and robust.
 
-\section{Technical}
+\section{Technical} \label{sec:technical}
 In the interviews of the case study, participants \#1, \#3, \#4, \#5, \#7, \#8, \#9, \#10 described aspects relating to the assurance of the technical quality of the software in the Norwegian public sector. 
 
-\subsection{Security}
+\subsection{Security} \label{sec:security}
 How quality in security is assured, is explained by participant \#1 to differ between agencies and projects. In the development process of NAV's new systems for distributing parental benefits, how security has been assured in the system has changed. Initially, only specific persons had the responsibility for security, however, when the project was completed in 2019, each team had a specific person with knowledge of security. Other projects such as the "Perform Project" at the Norwegian Public Service Pension Fund had more central control of security in its requirements, which the development teams had to take into account.
 
 %In the development process of NAV's new systems for distributing parental benefits, how security has been assured in the system has changed. Initially only specific persons had the responsibility for security, however when the project was complete in 2019, each team had a specific person with knowledge in security. Other projects such as "Perform Project" at the Norwegian Public Service Pension Fund had a more central control of security in its requirements, which the development teams had to take into account.
@@ -110,7 +108,7 @@ To ensure that quality requirements such as security are met at Mattilsynet, par
 
 %\textit{Participant \#9} explaining that at Mattilsynet a lot of ROS analasys is done to ensure quality in secruity, the ROS does also work as a more general ensuring of quality in the software being analysed.
 
-\subsection{Inspection}
+\subsection{Inspection} \label{sec:inspection}
 It is the belief by participant \#1, that many development teams in the Norwegian public sector use code inspection as a tool to find faults in their software. As well as new code has to be inspected before it is allowed to be merged into the code repository. Participant \#1 that this was done at the "Perform project" at the Norwegian Public Service Pension fund.
 
 %It is the belief that many development teams in the Norwegian public sector use code inspection as a tool to find faults in their software. As well as new code having to be inspected before it is allowed to be merge into the code repository. This was done at the "Perform project" at the Norwegian Public Service Pension fund.
@@ -141,7 +139,7 @@ Mattilsynet's developers recently started to use static code analysis tools. And
 
 %\textit{Participant \#10} explaining that when it comes to inspection through monitoring and monitoring metrics, it is a bit weak at Mattilsynet, the participant further explaining that he is used to a higher standard at places such as Norsk Tipping.
 
-\subsection{Testing}
+\subsection{Testing} \label{sec:testing}
 The use of regression testing is described by participant \#1 as used by most agencies in the Norwegian public sector to ensure quality in their software. As well as trying to automate as much of the testing as possible. Yet some of the testing activities described by participant \#1 are to still be done manually, such as exploitative testing and involving the customer in the testing activities.
 
 %Allegedly most agencies in the Norwegian public sector use regression testing to ensure software quality in their software. As well as trying to automate as much of the testing as possible. However some of the testing activities are still done manually, such as exploitative testing and involving the customer in the testing activities. 
@@ -176,7 +174,7 @@ The degree of automated tests is described by participant \#7 to be high at Skat
 
 %\textit{Participant \#8} explaining that to be able to change a piece of software, the software needs to have a high test coverage. A method is tested on the lower level with unit-tests, then the whole unit or application which the method is a part of is tested. If using a \gls{microservices} where there is interaction and values between the application, then testing is needed at all levels. This to ensure that everything works as intended and changes in a piece of software does not lead to any faults which leads to the software crashing.
 
-\subsection{Technical Debt}
+\subsection{Technical Debt} \label{sec:technical_debt}
 The ability to register \gls{technical_debt} is described by participant \#1 as an important measure to increase software quality. This is important as it enables knowledge of what should be improved in a piece of software, due to it uncovering potential faults and vulnerabilities in a piece of software.
 
 %An important measure to increase software quality is the ability to register \gls{technical_debt}. This is important as it enables knowledge in what should be improved in a piece of software, due to it uncovering potential faults and vulnerabilities in a piece of software.
@@ -227,7 +225,7 @@ An alleged Gartner report on Mattilsynets system "Mats" in 2012 was mentioned by
 
 %\textit{Participant \#11} explaining that Mattilsynet has older software which are good in quality when it comes to downtime and other operational requirements. However they are lacking in quality when it comes to \gls{technical_debt} and usability. The new applications of Mattilsynet has better usability and has overall better quality.
 
-\subsection{Measurements}
+\subsection{Measurements} \label{sec:measurements}
 The systems NAV uses in their operations are described by participant \#5 as having a strong focus on measurements, being that they are measured in how they behave, wherein the system is there downtime and where there is no downtime, are there any response problems, etc. Participant \#5 also explains that it is up to each team at NAV how they measure their systems when in operations, while it is encouraged that they do, have a good understanding of what state their system is in at all times.
 
 %The system NAV uses in their operations have a strong focus on measurements, being that they are measured in how they behave, where in the system are there downtime and where are there not downtime, are there any response problems, etc. It is up to each team at NAV how they measure their systems when in operations, while it is encourage that they do, to have a good understanding of what state their system is at all times.
@@ -240,7 +238,7 @@ It is the belief of Participant \#7 that the software at Skatteetaten is of few 
 
 %\textit{Participant \#7} explaining that his impressions that that there are little faults in the software at Skatteetaten. If looking that the processing for calculating how much taxes is owed in Norway and the amount is sent out to the citizens of Norway, which only happens once a year. During each time, the faults is being measured and fixed. The next year the same faults are not measured, new faults arise. However it is still of high quality.
 
-\subsection{Software Properties}
+\subsection{Software Properties} \label{sec:software_properties}
 A property described by participant \#9 as being an indicator for a piece of software to be of good quality, is that the data it serves is easily accessible. Explaining that if systems quality at Mattilsynet should be assessed today, it would be based on how its data interfaces with other applications. And such quality assurance methods are described as important by participant \#9: "It is extremely important to ensure that you have quality in your solution". Participant \#9 explains that today it is expected for an application to have accessible APIs so that it is predictable and easy to retrieve its data. Something that is not possible to achieve without following all aspects of good software quality, such as correct architecture and mindset in building a solution. 
 
 %A property described as being an indicator for a piece of software to be of good quality, is that the data it serves is easily accessible. If a systems quality at Mattilsynet should be assessed today, it would be based on how its data interfaces with other applications. Today it is expected for an application to have accessible API's so that it is predictable and easy to retrieve its data. This is something which is not possible to achieve without following all aspects of good software quality, such as correct architecture and mindset in building a solution.
@@ -259,10 +257,10 @@ The use of other data-sharing patterns, such as the \gls{publish_subscribe} patt
 
 %\textit{Participant \#10} also explaining that the publish-subscribe pattern is used to share sets of data between applications through data-streams, both inside and outside Mattilsynet. There was a case where Nortura wanted data from Mattilsynet on what restrictions an animal has, such as what medication an animal is using. Instead of asking Mattilsynet for this data, Nortura can just retrieve one of Mattilsynets data-streams on the API-level. This also gives a loose coupling between Mattilsynet and Norturas software, meaning that Norturas systems will not crash if Mattilsynets systems are down.
 
-\section{Methodological}
+\section{Methodological} \label{sec:methodological}
 In the interviews from the case study, participants \#1, \#2, \#3, \#4, \#5, \#7, \#8, \#9, and \#10 described aspects relating to software development methods used to assure software quality in the Norwegian public sector.
 
-\subsection{Agile}
+\subsection{Agile} \label{sec:agile}
 The Norwegian public sector is described by participant \#2 as not being concerned with assuring software quality strict regimes, with projects which were quite common before. Instead describing it to be based on getting feedback from its users. If the user does not experience any faults with the software, then it is of high quality. If the user finds that the software is of value, then it is of high quality.
 
 %The Norwegian public sector is not concerned with assuring software quality through strict regimes, through projects which were quite common before. However based upon getting feedback from its users. If the user do not experience any faults with the software, then it is of high quality. If the user find that the software is of value, then it is of high quality.
@@ -312,7 +310,7 @@ It is described by participant \#9 that Mattilsynet could have more established 
 %\textit{Participant \#9} explaining that Mattilsynet could have better routines for assuring quality in its software. However Mattilsynet is a young organisation when it comes to software development and is currently most focused on development speed for its new product teams and focus on productivity and releasing solutions, instead of quality and testing. It will then become a challenge to change from this focus on development speed to quality, testing and managing its software.
 
 
-\subsection{DevOps}
+\subsection{DevOps} \label{sec:devops}
 There are allegedly studies on the difference of the review of software through demonstration or deployed software described by participant \#1. Where the alleged studies conclude with the customer and users find more faults when the software is deployed, rather than in a demonstration. This is because when the software is presented in a demonstration, the context is artificial. Participant \#1 explains as this is because user reviewing the software does not get to experience how it works in their own organisation or in their day-to-day life. Hence other aspects of quality are reviewed when the software is deployed and available to the user in their normal context.
 
 %There are allegedly studies on the difference of the review of software through demonstration or deployed software. And such studies concluding with the customer and users finding more faults when the software is deployed, rather than in an demonstration. This because when the software is presented in an demonstration, the context is artificial. The user reviewing the software does not get to experience how it works in their own organisation or in their day to day life. Hence other aspects of quality is reviewed when the software is deployed and available to the user in their normal context.
@@ -358,7 +356,7 @@ New software being developed at Mattilsynet is described by participant \#10 as 
 
 %\textit{Participant \#10} explaning that if not looking at its older software, Mattilsynets newer software is build using the \gls{microservices}s or \gls{service_oriented_architecture}. The software is deployed to a \gls{kubernetes} cluster, which gives a declarative way of deploying software. Mattilsynet has a set of requirements for their software to be deployed to their cluster. The code has to be on GitHub and part of Mattilsynet's GitHub organisation, so that their platform team knows what it is, what it does and then can scan it for different reasons.
 
-\subsection{Software Development Techniques}
+\subsection{Software Development Techniques} \label{sec:software_development_techniques}
 During the "Perform project" at the Norwegian Public Service Pension fund, participant \#1 describes \gls{pair_programming} to be used as one of their software development methods. Explaining that not all development teams in the Norwegian public sector perform \gls{pair_programming}, but the ones who do, use it for the development of more complex features. And the development teams try to make sure that all team members have pair-programmed in a development iteration. The benefits of this are described by participant \#1 as: "It gives a common ownership of the code base, which is quite preventive for introducing new bugs, and that developers understand what is happening in the rest of the code".
 
 %During the "Perform project" at the Norwegian Public Service Pension fund, \gls{pair_programming} was used as one of their software development methods. Not all development teams in the Norwegian public sector perform \gls{pair_programming}, but the ones who do, use it for the development of more complex features. The development teams try to make sure that all team members has pair-programmed in an development iteration. This has the effect of increasing ownership in the software that the team is developing, which prevents future faults. It also increases the development team's understanding of how the software function.
@@ -403,10 +401,10 @@ It is also described by participant \#7 that Skatteetaten has also changed the t
 
 %\textit{Participant \#8} also explaining that there are several mechanisms at Skatteetaten to ensure good software quality. Such as code being through a test-phase is required for anything to be deployed to the production cluster. The developers never take any shortcuts. 
 
-\section{Organisational}
+\section{Organisational} \label{sec:organisational}
 Organisational aspects influencing software quality and its assurance in the Norwegian public sector were described by all participants in the interviews of the case study. Organisational aspects were also the most talked about by the participants, whereas about 50\% of the data was about organisational aspects. 
 
-\subsection{Team}
+\subsection{Team} \label{sec:team}
 It is suspected by Participant \#2 that the assurance of quality used to be a more formal part of software development, when the software development processes were more defined, like the waterfall model. Explaining that now development teams in the Norwegian public sector themselves choose what should be prioritised and what is important. This is suspected by Participant \#2 to have led to software quality assurance being prioritised lower and seen as less important. And the development teams instead think that if the users are satisfied, then the software is of high quality.
 
 %It is suspected that the assurance of quality used to be a more formal part of software development, when the software development processes was more defined, like the waterfall model. Now the development teams in the Norwegian public sector themselves choose what should be prioritised and what is important. Which is suspected that this has led to software quality assurance being prioritised lower and seen as less important. The development teams instead thinking that if the users are satisfied, then the software is of high quality.
@@ -487,7 +485,7 @@ The teams at Skatteetaten are described by participant \#8 as being cross-functi
 
 %\textit{Participant \#11} also explaining that Mattilsynet has discussed a range of governance-principles which each team have to deal with. These principles include things such as security, archive-law and GDPR. However the product teams are quite new, and has a high percentage of newly employed members, so Mattilsynet is currently only focusing on governance-principles which are required by Norwegian public sector agencies by Norwegian law, these being GDPR and security. To help with this, Mattilsynet has a central team for security which works closely with the platform team to create a good security foundation for the product teams. 
 
-\subsection{Knowledge}
+\subsection{Knowledge} \label{sec:knowledge}
 Participant \#1 explains that the Norwegian public sector participates in conferences to discuss competence development for their agency. Describing it as something which is not only done by the larger agencies: "It's not just Skatteetaten and NAV as the big communities that are present in places where this sort of thing is discussed, so I think it's quite widespread".
 
 %The Norwegian public sector participates in conferences to discuss competence development for their agency. It is not only the larger agencies such as NAV and Skatteetaten who attend such conferences, but other agencies in the Norwegian public sector.
@@ -517,7 +515,7 @@ For the health platform developed for the counties in mid-Norway, it is describe
 
 %\textit{Participant \#11} Mattilsynet also have a tech lead forum for all tech leads at Mattilsynet to increase knowledge sharing between all the tech leads.
 
-\subsection{Development Projects}
+\subsection{Development Projects} \label{sec:development_projects}
 The majority of the data from the interviews about organisational aspects described organisational aspects relating to development projects as affecting software quality and its assurance. These aspects are (I) the Norwegian digitisation agency's project wizard, (II) Financing, (III) Contracting and Tenders, (IV) Budgeting, (V) Off-the-shelf Software, (VI) Ownership, and (VII) Strategy.
 
 \subsubsection{Project Wizard} \label{sec:project_wizard}
@@ -547,7 +545,7 @@ Another challenge with the project wizard explained by participant \#3, is that 
 
 The project wizard is described by participant \#11 as not being a challenge for Mattilsynet. As Mattilsynet stopped its use after Mattilsynets recently re-organising from projects to product teams.
 
-\subsubsection{Financing}
+\subsubsection{Financing} \label{sec:financing}
 However, the challenges relating to financing from the project wizard in \autoref{sec:project_wizard} is described as an issue of prioritisation, rather than financing by participant \#5. And it usually being a discussion about financing, when in reality it is a prioritisation issue, independent of financing. Explaining that financing might not always mean low funding, but the expectation of what should be delivered compared to the given budget is too high. And over-promising can create issues which are expensive to fix and clean up.
 
 %However this has been described this as an issue of prioritisation, rather than financing. It being a prioritisation between improving technical quality and new functionally. It usually being a discussion about financing, when in reality it is an prioritisation issue, independent of financing. Financing might not always mean low funding, but the expectation of what should be delivered compared to the given budget being to high. And over-promising can create issues which are expensive to fix and cleanup. By not prioritising correctly and the wish to create as much as possible, as quickly as possible, and not prioritising to clean up can be an issue.
@@ -560,7 +558,7 @@ A more predictable financing model is described by participant \#8 as being bett
 
 %A more predictable financing model would be better for Skateetaten. If all the money for a project is used, which is a risk with an un-predictable financing model, the financing model do not take into account unforeseen event. This can have have negative consequences on the quality of what being developed.
 
-\subsubsection{Contracting and Tenders}
+\subsubsection{Contracting and Tenders} \label{sec:contracting_and_tenders}
 The health platform developed for the counties in mid-Norway is described by participant \#1 as mainly created using the waterfall method, switching to an agile method later in the project. However explaining that most software professionals would agree not to follow waterfall methods, as most of the time it leads to the software quality suffering. Participant \#1 explains that in such projects, it is common to define a set of requirements, send them to multiple contracts, and contractors fight to deliver the cheapest system. Describing that in such processes, the software quality usually suffers: "This will often mean that you have to take certain shortcuts. And if everything going into the solution is by contract. Then the shortcuts will usually be in the quality of the software". Further explaining the issue with sending software systems on tender, as it also distances these requirements from the user of the software.
 
 %The health platform developed for the counties in mid-Norway, was mainly created using the waterfall method, switching to an agile method later in the project. However most software professionals would agree to no follow waterfall methods, as most of the times it leads to the software quality suffering. In such projects it is common to define a set of requirements, send them to multiple contractors, and the contractors fight to deliver the cheapest system. It is then usually necessary to take some shortcuts, and if the requirements are written in a contract, it will be on the software quality. This problem only increases if the receiver of the software do not know how to evaluate software quality. This is the issue with sending software systems on tender, it distances the requirements from the user of the software.
@@ -587,7 +585,7 @@ The assurance of software quality is described by participant \#10 as quite vari
 
 %The assurance of software quality is described as quite variable in the rest of the Norwegian public sector. Areas such as healthcare, municipalities and national defence are still heavily invested in putting software on tender and assigning contractors. Others such as NAV, Skatteetaten, NRK and Norsk Tipping create the software themselves. The difference being is that the consultants are hired as competency to an already existing development team.
 
-\subsubsection{Budgeting}
+\subsubsection{Budgeting} \label{sec:budgeting}
 Yearly budgeting in the Norwegian public sector is described as a challenge by participant \#2. Explaining that in the private sector, if you can prove that a development project will be beneficial, it is easier to gain and spend money for that development project. While in the Norwegian public sector budgets are planned yearly. so it is not easy to change how the budget should be spent on different development projects. Participant \#2 explains that if a certain software in the public sector experiences any sudden problems which need larger funding, it will be difficult to get the necessary resources. Describing this as an issue for software quality: "If you find out something, like a quality issue, it's not like you can just magically get more money".
 
 %Yearly budgeting in the Norwegian public sector is a challenge. In the private sector, if you can prove that a development project will be beneficial, it is easier to gain and spend money for that develop project. However in the Norwegian public sector budgets are planned yearly, so it is not easy to change how the budget should be spent on different development projects. If a certain software in the public sector experiences any sudden problems which needs larger funding, it will be difficult to get the necessary resources. This problem is larger for software quality, as this is not a good enough reason for extraordinary funding from the yearly budget. 
@@ -600,7 +598,7 @@ The IT budget of NAV is described by Participant \#4 as not set correctly, as th
 
 %The IT budget of NAV is described as not set correctly. The budget should instead be placed under the problem, not the technology. For NAV, this means increasing the budget for a benefit, so that the benefit can create software that it needs, rather than all budgeting being placed under the IT budget. This way the management of NAV can be more flexible with their budgeting on what software should be created for the benefit that needs it the most. Now the budget is unreachable for the management of NAV and therefore not prioritised in a way that is beneficial for the users of NAV.
 
-\subsubsection{Off-the-shelf Software}
+\subsubsection{Off-the-shelf Software} \label{sec:off_the_shelf_software}
 Adjusting off-the-shelf software as a way of saving money is described as a challenge by participant \#2 in the Norwegian public sector. As trying to adjust off-the-shelf software might lead to lower quality, or having to spend a lot of resources to adjust it to the point of its users being satisfied. Participant \#2 explained that therefore might be a divide between the agencies in the Norwegian public sector which have their own in-house development environment, and the agencies that do not. This is due to the agencies with in-house developers who can create software themselves, having full control of the software quality. While the agencies without will need to adjust off-the-shelf software.
 
 %Adjusting off the shelf software as a way of saving money is a challenge in the Norwegian public sector. Trying to adjust off the shelf software might lead to lower quality, or having to spend a lot of resources to adjust it to the point of its users being satisfied. Therefore there might be a divide between the parts of the Norwegian public sector which have their own development environment. This due to agencies who have in-house developers who create software themselves, have full control of the software quality. Then those who do not have the opportunity for their own development environment will need to adjust off the shelf software.
@@ -609,7 +607,7 @@ It is also explained by participant \#2 that agencies with an in-house developme
 
 %In-house development environment in an agency are likely to know their agency and their agency quite well. This making the job of adjust off the self software easier. However when using off the shelf software, the rules of the software is already set which have to be taken into account. When creating software from scratch, these rules do not apply anymore, letting the software being highly specified for the users needs.
 
-\subsubsection{Ownership}
+\subsubsection{Ownership} \label{sec:ownership}
 NAV's success in digital transformation is described by participant \#6 because of their focus on ownership. Including stopping NAV's software single-handedly created by consultants: "It is a problem with consultants who do not have the long perspective. That they think that consultants and projects are connected at NAV, and when the project has been created it is done. To me, that is the opposite of quality". Participant \#6 explains that as time goes on and a piece of software at NAV is not maintained, it loses quality, so a constant fight against quality withering is necessary.
 
 %NAV's success in digital transformation is described because of their focus on ownership. Including stopping with NAV's software single-handed created by consultant who do not understand the long-term perspective when creating NAV's software. Not thinking that a piece of software can be created and the project is complete. This being the opposite of quality. As time goes on and a piece of software at NAV is not maintained, it looses quality, so a constant fight against quality withering is necessary.
@@ -620,7 +618,7 @@ Participant \#3 explained how organisations want to deliver software to their us
 
 %Different contract models can be used in the Norwegian public sector. Where competency is hired into and already existing development project, something which agencies such as NAV and Skatteetaten is doing. Here the agency is the owner and responsible part of the projct, but are hiring resources needed to complete the project. This is something that require a higher degree of maturity in the agency.
 
-\subsubsection{Strategy}
+\subsubsection{Strategy} \label{sec:strategy}
 Other agencies in the Norwegian public sector are described by participant \#4 as following the methods NAV are using to improve their digital transformation methods. The methods include rigging the agency around DevOps, product teams, and small specialised applications. Participant \#4 describes the Norwegian public sector as improving in these fields, while still having some way to go, to be as good as the private sector. And participant \# emphasises that the agencies in the Norwegian public sector do not follow NAV because NAV is successful, but because the methods NAV are following being clever.
 
 %Other agencies are following the methods NAV are using to improve their digital transformation efforts. These methods include rigging the agency around DevOps, product teams and small specialised applications. Even though the Norwegian public sector is improving, they still have some way to go to be as good as the private sector. The agencies do not follow NAV just because NAV is successful, but because the methods NAV are following are smart.
@@ -719,7 +717,7 @@ Well-managed projects are described by participant \#10 as not without their iss
 
 %\textit{Participant \#11} also explaining that in projects scope creep is a bad thing, something to be avoid. However scope creep only mean that new insights have been discovered about the problem being solved by the software. Thus having the possibility to give more value to the end user. Scope creep can also mean that the original scope of the project has changed, so not changing the scope can mean solving the wrong problem. This is the issue with things like the project wizard, which do not take changing scope into account and the dynamic approach which can be achieved by product teams.
 
-\subsection{Resources}
+\subsection{Resources} \label{sec:resources}
 The main challenge for the Norwegian public sector is described by participant \#1 as the lack of staff with knowledge in IT. Also explains as more agencies in the Norwegian public sector are following NAV to achieve continuous deployment and maintenance, however, it requires the agency to have their own IT resources.
 
 %The main challenge for the Norwegian public sector is describes as the lack of staff with knowledge in IT. More agencies in the Norwegian public sector are following NAV to achieve continuous deployment and maintenance, however this requires the agency to have their own IT-resources.
@@ -787,7 +785,7 @@ Another challenge with legal requirements described by participant \#7 is that t
 
 %\textit{Participant \#11} also explaining that to help their development teams with legal requirements and GDPR, a legal adviser has recently been hired, which will be of great help in raising knowledge on GDPR in the different product teams.
 
-\subsection{External Revision}
+\subsection{External Revision} \label{sec:external_revision}
 The process for software quality assurance at NAV is described by participant \#5 as not being fully documented. Explaining that If a project at NAV is subject to a revision, it would be a challenge to get a complete overview of the quality assurance methods used. And in such an event, the development teams would need to be contacted and asked to document these processes. However, participant \#5 describes this lack of documentation to have some advantages: "The advantage is that we do not create documentation that is not actually used in practice".
 
 %Processes for software quality assurance at NAV are not fully documented. If a project at NAV is subject to a revision, it would be challenging to get a complete overview of the quality assurance methods. The development teams would need to be contacted and ask to document these processes. However this lack of documentation do have some benefits, like the teams at NAV not having to spend large amounts of time on documenting their processes, just for documentation sake.
