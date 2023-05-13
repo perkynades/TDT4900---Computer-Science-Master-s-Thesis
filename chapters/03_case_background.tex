@@ -1,13 +1,11 @@
 \chapter{Case Background}
-This chapter introduces relevant background for the case of the study
-
-The following chapter will introduce relevant theory for understanding the findings of this study and its discussion. The agencies studied and relevant organisations in the Norwegian public sector is presented. And processes and practices used for software development and software quality assurance in the Norwegian public sector are presented. 
+This chapter introduces relevant background theory for understanding the case of the study, its findings and its discussion. The agencies studied and relevant organisations in the Norwegian public sector are presented. And processes and practices used for software development and software quality assurance in the Norwegian public sector are presented. 
 
 \section{Norwegian Public Sector}
-The Norwegian public sector is a collective term for the state and municipal administration in Norway. It is an entity which include public goods and government services, such as military, infrastructure, public education, and health care. The public sector differs from the private sector, as it does not concern privately owned organisation, nonprofit organisations or households \cite{os_snl_2022}\cite{ps_wiki_2023}.
+The Norwegian public sector is a collective term for the state and municipal administration in Norway. It is an entity which includes public goods and government services, such as military, infrastructure, public education, and health care. The public sector differs from the private sector, as it does not concern privately owned organisations, nonprofit organisations or households \cite{os_snl_2022}\cite{ps_wiki_2023}.
 
 \subsection{Norwegian Labour and Welfare Organization (NAV)}
-The Norwegian Labour and Welfare Organisation, or NAV, is a central agency in the Norwegian public sector which provides social and economic security to the citizens of Norway, while encouraging a transition to activity and employment \cite{nav_r_2023}. NAV is partnered with the municipalities in Norway, and has about 22 000 employees, where about 15 500 is employed to the Norwegian state, and 6 500 employed in the municipalities \cite{org_nav_2023}. 
+The Norwegian Labour and Welfare Organisation, or NAV, is a central agency in the Norwegian public sector which provides social and economic security to the citizens of Norway while encouraging a transition to activity and employment \cite{nav_r_2023}. NAV is partnered with the municipalities in Norway and has about 22 000 employees, where about 15 500 are employed in the Norwegian state, and 6 500 are employed in the municipalities \cite{org_nav_2023}. 
 
 %\subsubsection{NAIS}
 %NAIS is NAV's application platform that provides a range of services to product-teams at NAV, intended to make it easier for the product-teams themselves to develop and maintain typical "NAV-applications". NAIS provides services which includes, but are not limited to: logging, metrics, deployment, operators, and runtime environments. Which all are managed on their \gls{kubernetes} clusters \cite{nais_2023}.
@@ -16,29 +14,29 @@ The Norwegian Labour and Welfare Organisation, or NAV, is a central agency in th
 The Norwegian Tax Administration, or Skatteetaten, are responsible for ensuring that taxes and other claims in Norway are correctly assessed and paid. It also ensures that the Norwegian National Registry is up to date \cite{skatt_r_2023}. As of 2019, Skattetaten has about 6 300 employees \cite{skatt_r_2023}. 
 
 \subsection{Norwegian Food Safety Authority (Mattilsynet)}
-The Norwegian Food Safety Authority, or Mattilsynet, are responsible for promoting animal and human health in Norway by supervising the different food chains in Norway. All from the farms or fisheries, to the food Norwegians eat from said farms and fisheries \cite{mat_r_2023}. As of 2023, Mattilsynet has about 1 300 employees, stationed in offices all regions of Norway \cite{org_mat_2023}.
+The Norwegian Food Safety Authority, or Mattilsynet, are responsible for promoting animal and human health in Norway by supervising the different food chains in Norway. All from the farms or fisheries, to the food Norwegians eat from said farms and fisheries \cite{mat_r_2023}. As of 2023, Mattilsynet has about 1 300 employees, stationed in offices in all regions of Norway \cite{org_mat_2023}.
 
 \subsection{Norwegian Digitisation Agency (Digdir)}
 The Norwegian Digitisation Agency, or Digdir, are responsible for the development and maintenance of development and services used across the Norwegian public sector. Digdir also has the responsibility of strategic coordination of digitisation across the Norwegian public sector \cite{digdir_r_2023}.
 
 \subsubsection{Project Wizard}
-The project wizard delivered by the Norwegian Ministry of Finance is a set of requirements that any digitisation projects with a total cost of equal to or above 300 Million NOK have to follow. The requirements including the project to be externally evaluated before presented to the Norwegian government and the Norwegian Storting. This to avoid faulty investments and keeping control of spending in the project, assuring efficient use of the funding from the Norwegian taxpayer \cite{project_wizard_r_2019}.
+The project wizard delivered by the Norwegian Ministry of Finance is a set of requirements that any digitisation projects with a total cost equal to or above 300 Million NOK have to follow. The requirements include the project to be externally evaluated before being presented to the Norwegian government and the Norwegian Storting. This is to avoid faulty investments and keep control of spending in the project, assuring efficient use of the funding from the Norwegian taxpayer \cite{project_wizard_r_2019}.
 
-The project wizard have the following phases which are to be followed by any projects: (I) Idea, (II) Concept, (III) Preliminary project, and (IV) Implementation.
+The project wizard has the following phases which are to be followed by any project: (I) Idea, (II) Concept, (III) Preliminary project, and (IV) Implementation.
 
 \paragraph{Idea}
-The idea phase is used to identify any problems that could be suited as a project in the Norwegian public sector and considering if the problem should be investigated further. For the larger projects, the result of the idea phase will become a mandate for the concept phase \cite{project_wizard_r_2019}.
+The idea phase is used to identify any problems that could be suited as a project in the Norwegian public sector and consider if the problem should be investigated further. For the larger projects, the result of the idea phase will become a mandate for the concept phase \cite{project_wizard_r_2019}.
 
 \paragraph{Concept}
-In the concept phase the problem is described in detail and how the project should solve the problem. Future needs of the Norwegian society and goals of the performed projects are also described. Multiple concepts of the project should also be proposed in this phase, which are then subject to a sosio-economic analysis. This to decide which concept is the best and what circumstances is needed for further planning to be successful \cite{project_wizard_r_2019}. This choice of concept is performed by independent, external experts before a concept can be approved by the Norwegian government.
+In the concept phase, the problem is described in detail and how the project should solve the problem. The future needs of Norwegian society and the goals of the performed projects are also described. Multiple concepts of the project should also be proposed in this phase, which are then subject to a socioeconomic analysis. This is to decide which concept is the best and what circumstances are needed for further planning to be successful \cite{project_wizard_r_2019}. This choice of concept is performed by independent, external experts before a concept can be approved by the Norwegian government.
 
 \paragraph{Preliminary project}
-The preliminary project phase then has the responsibility of setting the basis for management and estimates of costs for the chosen project. In this phase documents which describe how the project should be performed by further planning of what should be built or developed. And developing more detailed cost estimates and how uncertain these cost estimates are. How the project should be managed to keep eventual costs controlled and the project reaching its set goals. The preliminary project phase also considers which contracts are needed with possible suppliers to deliver what the project needs to meet its set goals. The quality of the basis of management and cost estimates are then assured before the project investment and cost framework can be approved by the Norwegian Storting \cite{project_wizard_r_2019}. 
+The preliminary project phase then has the responsibility of setting the basis for management and estimates of costs for the chosen project. In this phase, documents describe how the project should be performed by further planning of what should be built or developed. And developing more detailed cost estimates and how uncertain these cost estimates are. How the project should be managed to keep eventual costs controlled and the project reaching its set goals. The preliminary project phase also considers which contracts are needed with possible suppliers to deliver what the project needs to meet its set goals. The quality of the basis of management and cost estimates are then assured before the project investment and cost framework can be approved by the Norwegian Storting \cite{project_wizard_r_2019}. 
 
 \paragraph{Implementation}
 After the project has been approved by the Norwegian Storting, the implementation of the project is commenced.
 
-The Norwegian digitisation agency have also described two phases which occur after implementation for digitisation projects: (V) Closing, and (VI) Realisation.
+The Norwegian digitisation agency has also described two phases which occur after implementation for digitisation projects: (V) Closing, and (VI) Realisation.
 
 \paragraph{Closing}
 After what is built or developed is complete, the closing phase is started. The closing phase ensures a structured and formal closing of the project, as well as a good handover of the project to the organisation responsible for manageability \cite{project_wizard_digdir_2023}. 
@@ -48,44 +46,44 @@ When the project has been transferred, the project is evaluated for further real
 
 \subsection{Other Organisations}
 \subsubsection{Norwegian Public Service Pension Fund}
-The Norwegian Public Service Pension Fund delivers pensions, insurance, and loans to employees in the Norwegian public sector and other organisations connected to the Norwegian public sector. In total the Norwegian Public Service Pension fund manage the pension of 1 Million Norwegian who are, or have been employed in the Norwegian public sector \cite{statens_pensjonskasse_2023}.
+The Norwegian Public Service Pension Fund delivers pensions, insurance, and loans to employees in the Norwegian public sector and other organisations connected to the Norwegian public sector. In total the Norwegian Public Service Pension fund manages the pension of 1 Million Norwegian who are, or have been employed in the Norwegian public sector \cite{statens_pensjonskasse_2023}.
 
 \subsubsection{Norsk Tipping}
 Norsk Tipping is a gambling company owned by the Norwegian government and managed by the Norwegian Ministry of Culture. Norsk Tipping has a monopoly on a range of gambling games and their rules in Norway \cite{norsk_tipping_wiki_2023}.
 
 \subsubsection{Entur}
-Entur is an organisation responsible for providing a national travel planer for the Norwegian public transit, including, buses, trams, trains, subways etc. Entur provides a single interface to buy multiple tickets from multiple public transit providers \cite{entur_2023}.
+Entur is an organisation responsible for providing a national travel planner for Norwegian public transit, including, buses, trams, trains, subways etc. Entur provides a single interface to buy multiple tickets from multiple public transit providers \cite{entur_2023}.
 
 \subsubsection{Norwegian Directorate of Agriculture}
-The Norwegian Directorate of Agriculture are responsible for implementing the agricultural policy from the Norwegian government. And in general facilitates the agriculture and food industries in Norway \cite{landbruksdirektoratet_2023}.
+The Norwegian Directorate of Agriculture is responsible for implementing the agricultural policy of the Norwegian government. And in general, facilitates the agriculture and food industries in Norway \cite{landbruksdirektoratet_2023}.
 
 \subsubsection{Nortura}
 Nortura is one of Norway's largest providers of food, mostly focusing on different red meats and chicken. Nortura has over 30 production units and yearly processes 350 000 tonnes of meat, which is delivered to grocery stores and hotels \cite{nortura_2023}.
 
 \subsubsection{Norwegian Broadcasting Corporation (NRK)}
-The Norwegian Broadcasting Corporation, or NRK, is a media company owned by the Norwegian government, which provides media on TV, radio, and the internet. NRK is funded by the Norwegian tax payers through the Norwegian television license \cite{nrk_wiki_2023}.
+The Norwegian Broadcasting Corporation, or NRK, is a media company owned by the Norwegian government, which provides media on TV, radio, and the Internet. NRK is funded by Norwegian taxpayers through the Norwegian television license \cite{nrk_wiki_2023}.
 
 \subsubsection{Norwegian Police Service}
-The Norwegian Police Service is the agency that are responsible for fighting crime and ensuring law and order in Norway. And is controlled by the Norwegian Ministry of Justice and Public Security \cite{politiet_wiki_2023}.
+The Norwegian Police Service is the agency that is responsible for fighting crime and ensuring law and order in Norway. And is controlled by the Norwegian Ministry of Justice and Public Security \cite{politiet_wiki_2023}.
 
 \subsubsection{The Brønnøysund Register Centre}
-The Brønnøysund Register Centre is an agency which have the responsibility of providing a range of registries storing information about the Norwegian society, such as organisations operating in Norway \cite{brønnøysundregistrene_wiki_2023}.
+The Brønnøysund Register Centre is an agency which has the responsibility of providing a range of registries storing information about Norwegian society, such as organisations operating in Norway \cite{brønnøysundregistrene_wiki_2023}.
 
 \subsection{Digitalisation in the Norwegian public sector}
-The government of Norway has in the last decades has an increased focus on digitalisation of the Norwegian public sector, with the most recent digitalisation strategy from 2019-2025 \cite{r_2019}. The main goal of the digitalisation strategy is for different actors in the Norwegian public sector to co-operate by the development of shared digital eco-systems. The goal of this development project is to aid the development of user-centred system development for a more effective and coordinated exploitation of the Norwegian public sectors IT-systems \cite{r_2019}.
+The government of Norway has in the last decades has an increased focus on digitalisation of the Norwegian public sector, with the most recent digitalisation strategy from 2019-2025 \cite{r_2019}. The main goal of the digitalisation strategy is for different actors in the Norwegian public sector to cooperate through the development of shared digital ecosystems. The goal of this development project is to aid the development of user-centred system development for more effective and coordinated exploitation of the Norwegian public sector IT systems \cite{r_2019}.
 
 \section{Software Quality}
 As stated in \autoref{sec:motivation}, software quality is defined as how well a piece of software is measured against a chosen set of non-functional requirements, chosen based on the software's functional requirements \cite{iso_25010:2011}. 
 
 \subsection{Non-functional requirements} \label{sec:non_functional_requirments}
-Non-functional requirements are defined to when it can be determined that a piece of software delivers value, hence the non-functional requirements are chooses based on what value the piece of software is supposed to generate \cite{iso_25010:2011}. These are some examples of the most common non-functional requirements:
+Non-functional requirements are defined as when it can be determined that a piece of software delivers value, hence the non-functional requirements are chosen based on what value the piece of software is supposed to generate \cite{iso_25010:2011}. These are some examples of the most common non-functional requirements:
 
 \begin{itemize}
     \item \textbf{Performance} - The amount of useful work accomplished by a piece of software \cite{performance_wiki_2023}.
     \item \textbf{Scalability} - How a piece of software can handle a growing and shrinking amount of work by adding and reducing resources \cite{scalability_wiki_2023}. 
     \item \textbf{Portability} - The effort required for a piece of software to run on different devices \cite{portability_wiki_2023}.
     \item \textbf{Reliability} - How long a piece of software can function without failure \cite{reliability_wiki_2023}.
-    \item \textbf{Maintainability} - How easy is a piece of software to repair or update \cite{maintainability_wiki_2023}. 
+    \item \textbf{Maintainability} - How easy a piece of software is to repair or update \cite{maintainability_wiki_2023}. 
     \item \textbf{Security} - How protected is a piece of software from attacks by malicious actors \cite{security_wiki_2023}.
     \item \textbf{Usability} - How a piece of software provides conditions for its user to perform tasks safely, effectively, and efficiently \cite{usability_wiki_2023}.
 \end{itemize}
@@ -100,26 +98,26 @@ Software testing is a core activity in software development, where the behaviour
 Acceptance testing is a variant of software testing where a piece of software is tested to determine if the software meets its requirement specification \cite{acceptance_testing_wiki_2023}. Acceptance testing might involve black-box testing, which involves testing a piece of software's functionality without inspecting its technical structure \cite{black_box_testing_wiki_2023}.
 
 \subsection{Automated Testing}
-Automated testing is the use of software separate from the software being tested to control its quality trough automated mechanisms. In automated testing the predicted outcome of a functionality is compared with the actual outcome. And is suited for repetitive testing tasks in a formalised testing process which would be difficult to do manually \cite{test_automation_wiki_2023}.
+Automated testing is the use of software separate from the software being tested to control its quality through automated mechanisms. In automated testing, the predicted outcome of functionality is compared with the actual outcome. And is suited for repetitive testing tasks in a formalised testing process which would be difficult to do manually \cite{test_automation_wiki_2023}.
 
 \section{Software Development Methods}
 \subsection{Waterfall}
-The waterfall method is a software development method in which the phases of a software project is split up in sequential phases. These phases are most common: (I) Requirement specification, (II) Design, (III) Implementation, (IV) Verification, (V) Delivery, and (VI) Maintenance. The waterfall method is described as less iterative and flexible than other software development methods as progress flows in a singular direction \cite{waterfall_model_wiki_2023}.
+The waterfall method is a software development method in which the phases of a software project are split up into sequential phases. These phases are most common: (I) Requirement specification, (II) Design, (III) Implementation, (IV) Verification, (V) Delivery, and (VI) Maintenance. The waterfall method is described as less iterative and flexible than other software development methods as progress flows in a singular direction \cite{waterfall_model_wiki_2023}.
 
 \subsection{Agile}
-The agile software development method designed to bring the user/customer closer to the development team, in order to give continuous feedback of the software being developed. The agile method also enabling adaptive planning and more flexible requirement specifications, which can be changed during the development project, based on user/customer feedback \cite{agile_software_development_wiki_2023}.
+The agile software development method is designed to bring the user/customer closer to the development team, in order to give continuous feedback on the software being developed. The agile method also enables adaptive planning and more flexible requirement specifications, which can be changed during the development project, based on user/customer feedback \cite{agile_software_development_wiki_2023}.
 
 \subsection{DevOps}
-DevOps, short for development operations is a software development methodology where a set of tools is used to integrate development and operations in order to shorten the development life cycle. DevOps is a methodology which is complimentary to the agile software development method \cite{devops_wiki_2023}. The DevOps methodology has 3 main components: (I) Continuous Integration, (II) Continuous Delivery, and (III) Continuous Deployment.
+DevOps, short for development operations is a software development methodology where a set of tools is used to integrate development and operations in order to shorten the development life cycle. DevOps is a methodology which is complementary to the agile software development method \cite{devops_wiki_2023}. The DevOps methodology has 3 main components: (I) Continuous Integration, (II) Continuous Delivery, and (III) Continuous Deployment.
 
 \subsubsection{Continuous Integration}
-In continuous integration all developers in a development team are continuously merging their work into the main code repository. With each merge usually resulting in a workflow being triggered, where tests are run, and the current code repository being built \cite{continuous_integration_wiki_2023}.
+In continuous integration, all developers in a development team are continuously merging their work into the main code repository. Each merge usually results in a workflow being triggered, where tests are run, and the current code repository being built \cite{continuous_integration_wiki_2023}.
 
 \subsubsection{Continuous Delivery}
-In continuous delivery, the development teams produce a piece of software in short cycles, to ensure that a piece of software can be delivered at any time trough an automated delivery pipeline. Allowing more incremental updates to be delivered, reducing the risk of delivering faulty software \cite{continuous_delivery_wiki_2023}.
+In continuous delivery, the development teams produce a piece of software in short cycles, to ensure that a piece of software can be delivered at any time through an automated delivery pipeline. Allowing more incremental updates to be delivered, reducing the risk of delivering faulty software \cite{continuous_delivery_wiki_2023}.
 
 \subsubsection{Continuous Deployment}
-Continuous deployment is the technical aspects of continuous delivery, and is the automated system, set up to deliver updates trough its delivery pipeline. This delivery pipeline is usually set up to run automated tests, which block further delivery if any test fails. If all tests pass, the software update is built and delivered \cite{continuous_deployment_wiki_2023}.
+Continuous deployment is the technical aspect of continuous delivery and is the automated system, set up to deliver updates through its delivery pipeline. This delivery pipeline is usually set up to run automated tests, which block further delivery if any test fails. If all tests pass, the software update is built and delivered \cite{continuous_deployment_wiki_2023}.
 
 \section{Product Teams}
-Product teams are cross-functional software development teams which are focused around measuring the outcomes of their work, rather than output. Product teams are empowered to find the best way to solve their problems for their customer/user, yet following the strategy of the organisation which the teams are working for \cite{product_teams_2019}. Product teams differ from more traditional feature teams, which focus on delivering features from a prioritised list of requirements \cite{product_teams_2019}.
+Product teams are cross-functional software development teams which are focused on measuring the outcomes of their work, rather than output. Product teams are empowered to find the best way to solve their problems for their customer/user, yet follow the strategy of the organisation for which the teams are working \cite{product_teams_2019}. Product teams differ from more traditional feature teams, which focus on delivering features from a prioritised list of requirements \cite{product_teams_2019}.
